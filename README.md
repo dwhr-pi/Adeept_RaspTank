@@ -1,385 +1,385 @@
-[RobotName]: Adeept_Rasptank
+[Robotername]: Adeept_Rasptank
 [RobotURL]: https://github.com/adeept/adeept_rasptank
 [RobotGit]: https://github.com/adeept/adeept_rasptank.git
-[Official Raspberry Pi website]: https://www.raspberrypi.org/downloads/
-[Image file for the Raspberry Pi Robot]: https://adeept-my.sharepoint.com/personal/tomsun_adeept_onmicrosoft_com/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Ftomsun%5Fadeept%5Fonmicrosoft%5Fcom%2FDocuments%2FadeeptRaspTank&amp;originalPath=aHR0cHM6Ly9hZGVlcHQtbXkuc2hhcmVwb2ludC5jb20vOmY6L2cvcGVyc29uYWwvdG9tc3VuX2FkZWVwdF9vbm1pY3Jvc29mdF9jb20vRXZCZmhES1dJVEJLb1ZLejFJTThta01CaWc5SHRiZG9sMXdLQU83WTk5cFJWdz9ydGltZT1rUWxJeE9EMjEwZw
-[Official website]: https://www.adeept.com/
+[Offizielle Raspberry Pi-Website]: https://www.raspberrypi.org/downloads/
+[Image-Datei für den Raspberry Pi Robot]: https://adeept-my.sharepoint.com/personal/tomsun_adeept_onmicrosoft_com/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Ftomsun%5Fadeept%5Fonmicrosoft%5Fcom%2FDocuments%2FadeeptRaspTank&amp ; originalPath = aHR0cHM6Ly9hZGVlcHQtbXkuc2hhcmVwb2ludC5jb20vOmY6L2cvcGVyc29uYWwvdG9tc3VuX2FkZWVwdF9vbm1pY3Jvc29mdF9jb20vRXZCZmhES1dJVEJLb1ZLejFJTThta01CaWc5SHRiZG9sMXdLQU83WTk5cFJWdz9ydGltZT1rUWxJeE9EMjEwZw
+[Offizielle Website]: https://www.adeept.com/
 [GitHub]: https://github.com/adeept/adeept_rasptank/
-[Documentation for structure assembly]: https://www.adeept.com/learn/
-Getting Started with Raspberry Pi Robot and Python 
+[Dokumentation zur Strukturmontage]: https://www.adeept.com/learn/
+Erste Schritte mit Raspberry Pi Robot und Python
 ----
-* [Getting Started with Raspberry Pi Robot and Python](#getting-started-with-raspberry-pi-robot-and-python)
-    * [1. Premise](#1-premise)
-       * [1.1 STEAM and Raspberry Pi](#11-steam-and-raspberry-pi)
-       * [1.2 About the Documentation](#12-about-the-documentation)
-    * [2. Getting to Use the Raspberry Pi](#2-getting-to-use-the-raspberry-pi)
-       * [2.1 Write the Raspberry Pi image to an SD card](#21-write-the-raspberry-pi-image-to-an-sd-card)
-          * [2.1.1 Method A: Write 'Raspbian' to the SD card by Raspberry Pi Imager](#211-method-a-write-raspbian-to-the-sd-card-by-raspberry-pi-imager)
-          * [2.1.2 Method B: Download the image file Raspbian and write it to the SD card manually](#212-method-b-download-the-image-file-raspbian-and-write-it-to-the-sd-card-manually)
-          * [2.1.3 Method C: Manually download the image file provided by us and write it to the SD card (not recommended)](#213-method-c-manually-download-the-image-file-provided-by-us-and-write-it-to-the-sd-card-not-recommended)
-       * [2.2 Enable SSH Server of Raspberry Pi](#22-enable-ssh-server-of-raspberry-pi)
-          * [2.2.1 Method A: Enable SSH with peripherals](#221-method-a-enable-ssh-with-peripherals)
-          * [2.2.2 Method A: Enable SSH without peripherals](#222-method-a-enable-ssh-without-peripherals)
-       * [2.3 Configure WiFi on Raspberry Pi](#23-configure-wifi-on-raspberry-pi)
-          * [2.3.1 Method A: WiFi connection with peripherals](#231-method-a-wifi-connection-with-peripherals)
-          * [2.3.2 Method A: WiFi connection without peripherals](#232-method-a-wifi-connection-without-peripherals)
-    * [3. Software Installation &amp; Operation on Raspberry Pi](#3-software-installation--operation-on-raspberry-pi)
-       * [3.1 Log into Raspberry Pi (Windows 10)](#31-log-into-raspberry-pi-windows-10)
-       * [3.2 Log into Raspberry Pi (Linux or Mac OS)](#32-log-into-raspberry-pi-linux-or-mac-os)
-       * [3.3 Log into Raspberry Pi (Windows)](#33-log-into-raspberry-pi-windows)
-       * [3.4 Download Program of the Raspberry Pi Robot](#34-download-program-of-the-raspberry-pi-robot)
-       * [3.5 Install Corresponding Dependent Libraries](#35-install-corresponding-dependent-libraries)
-       * [3.6 Run the Raspberry Pi Robot's Program](#36-run-the-raspberry-pi-robots-program)
-    * [4. Precautions for Structure Assembly](#4-precautions-for-structure-assembly)
-          * [4.1 Documentation for structure assembly](#41-documentation-for-structure-assembly)
-          * [4.2 Precautions for Structure Assembly](#42-precautions-for-structure-assembly)
-    * [5. Controlling Robot via WEB App](#5-controlling-robot-via-web-app)
-    * [6. Q&amp;A](#6-qa)
+* [Erste Schritte mit Raspberry Pi Robot und Python](#getting-started-with-raspberry-pi-robot-and-python)
+    * [1. Prämisse](#1-Prämisse)
+       * [1.1 STEAM und Raspberry Pi] (#11-steam-and-raspberry-pi)
+       * [1.2 Über die Dokumentation](#12-über-die-dokumentation)
+    * [2. Erste Schritte mit dem Raspberry Pi](#2-Getting-to-use-the-raspberry-pi)
+       * [2.1 Das Raspberry Pi-Image auf eine SD-Karte schreiben](#21-write-the-raspberry-pi-image-to-an-sd-card)
+          * [2.1.1 Methode A: 'Raspbian' mit Raspberry Pi Imager auf die SD-Karte schreiben](#211-method-a-write-raspbian-to-the-sd-card-by-raspberry-pi-imager)
+          * [2.1.2 Methode B: Laden Sie die Image-Datei Raspbian herunter und schreiben Sie sie manuell auf die SD-Karte](#212-method-b-download-the-image-file-raspbian-and-write-it-to-the- SD-Karte-manuell)
+          * [2.1.3 Methode C: Laden Sie die von uns bereitgestellte Bilddatei manuell herunter und schreiben Sie sie auf die SD-Karte (nicht empfohlen)](#213-method-c-manually-download-the-image-file-provided-by- uns-und-schreiben-es-auf-die-sd-karte-nicht-empfohlen)
+       * [2.2 SSH-Server von Raspberry Pi aktivieren](#22-enable-ssh-server-of-raspberry-pi)
+          * [2.2.1 Methode A: SSH mit Peripheriegeräten aktivieren](#221-method-a-enable-ssh-with-peripherals)
+          * [2.2.2 Methode A: SSH ohne Peripheriegeräte aktivieren](#222-method-a-enable-ssh-ohne-peripheriegeräte)
+       * [2.3 WLAN auf Raspberry Pi konfigurieren] (#23-configure-wifi-on-raspberry-pi)
+          * [2.3.1 Methode A: WiFi-Verbindung mit Peripheriegeräten](#231-Methode-eine-WLAN-Verbindung-mit-Peripheriegeräten)
+          * [2.3.2 Methode A: WiFi-Verbindung ohne Peripheriegeräte](#232-Methode-eine-WLAN-Verbindung-ohne-Peripheriegeräte)
+    * [3. Softwareinstallation &amp; Betrieb auf Raspberry Pi](#3-software-installation--operation-on-raspberry-pi)
+       * [3.1 Bei Raspberry Pi anmelden (Windows 10)](#31-log-in-raspberry-pi-windows-10)
+       * [3.2 Anmelden bei Raspberry Pi (Linux oder Mac OS)](#32-log-in-raspberry-pi-linux-or-mac-os)
+       * [3.3 Einloggen in Raspberry Pi (Windows)](#33-log-in-raspberry-pi-windows)
+       * [3.4 Download-Programm des Raspberry Pi-Roboters](#34-download-program-of-the-raspberry-pi-robot)
+       * [3.5 Entsprechende abhängige Bibliotheken installieren](#35-installieren-entsprechende-abhängige-Bibliotheken)
+       * [3.6 Führen Sie das Programm des Raspberry Pi Robots aus] (#36-run-the-raspberry-pi-robots-program)
+    * [4. Vorsichtsmaßnahmen für die Strukturmontage](#4-Vorsichtsmaßnahmen-für-Strukturmontage)
+          * [4.1 Dokumentation zur Strukturmontage](#41-Dokumentation-für-Strukturmontage)
+          * [4.2 Vorsichtsmaßnahmen für die Strukturmontage](#42-Vorsichtsmaßnahmen-für-Strukturmontage)
+    * [5. Roboter über WEB-App steuern](#5-Roboter-Steuerung-über-Web-App)
+    * [6. Fragen und Antworten](#6-qa)
 
 
-## 1. Premise
-### 1.1 STEAM and Raspberry Pi
-STEAM stands for Science, Technology, Engineering, Arts and Mathematics. It's a type of transdisciplinary education idea focused on practice. 
-As a board designed for computer programming education, Raspberry Pi has lots of advantages over other robot development boards. Therefore, Raspberry Pi is used for function control of the robot. 
+## 1. Prämisse
+### 1.1 STEAM und Raspberry Pi
+STEAM steht für Wissenschaft, Technologie, Ingenieurwesen, Kunst und Mathematik. Es ist eine Art transdisziplinäre Bildungsidee, die auf die Praxis ausgerichtet ist.
+Als Board, das für die Ausbildung in Computerprogrammierung entwickelt wurde, hat Raspberry Pi viele Vorteile gegenüber anderen Roboterentwicklungsboards. Daher wird Raspberry Pi zur Funktionskontrolle des Roboters verwendet.
 
-### 1.2 About the Documentation 
-This documentation is for software installation and operation guide for the Python robot product. It describes every detail of the whole process of fulfilling the robot project by Python and Raspberry Pi from scratch as well as some precautions. Hope you can get started with the Raspberry Pi robot on Python and make more creations with this documentation.   
+### 1.2 Über die Dokumentation
+Diese Dokumentation ist eine Softwareinstallations- und Bedienungsanleitung für das Python-Roboterprodukt. Es beschreibt jedes Detail des gesamten Prozesses der Erfüllung des Roboterprojekts von Python und Raspberry Pi von Grund auf sowie einige Vorsichtsmaßnahmen. Ich hoffe, Sie können mit dem Raspberry Pi-Roboter auf Python loslegen und mit dieser Dokumentation weitere Kreationen erstellen.
 
-![mermaid](images/mermaid.png)
-
-
-
-## 2. Getting to Use the Raspberry Pi
-
-### 2.1 Write the Raspberry Pi image to an SD card 
+![Meerjungfrau](images/mermaid.png)
 
 
-#### 2.1.1 Method A: Write 'Raspbian' to the SD card by `Raspberry Pi Imager`
-`Raspberry Pi Imager` is an image writing tool to SD card developed by the Raspberry Pi Organization. It comes with many versions working on different systems and it's quite easy to use; all you need is choose the operating system and SD card, Raspberry Pi Imager will download the corresponding image file for the system and install it to the SD card.
 
-**Step-by-Step Overview**  
+## 2. Wie Sie den Raspberry Pi verwenden
 
-1. Prepare an SD card (16G or larger) and an SD card reader
-2. Download the `Raspberry Pi Imager` on the official website [Official Raspberry Pi website](https://www.raspberrypi.org/downloads/ )
-    - [Raspberry Pi Imager for Windows](https://downloads.raspberrypi.org/imager/imager.exe "Click here to download Raspberry Pi Imager for Windows)
-    - [Raspberry Pi Imager for macOS](https://downloads.raspberrypi.org/imager/imager.dmg "Click here to download Raspberry Pi Imager for macOS")
-    - [Raspberry Pi Imager for Ubuntu](https://downloads.raspberrypi.org/imager/imager_amd64.deb "Click here to download Raspberry Pi Imager for Ubuntu")
-3. Install the `Raspberry Pi Imager`
-4. Write the operating system for Raspberry Pi to the SD card with `Raspberry Pi Imager` `Raspbian Full - A port of Debian with desktop and recommended application`  
-5. Leave the SD card connected after writing is completed, we'll use for configuring SSH and WiFi connection later.
+### 2.1 Das Raspberry Pi-Image auf eine SD-Karte schreiben
 
-**Detailed Steps:**  
 
-- Open a web browser on your computer, go to the Raspberry Pi website [Official Raspberry Pi website](https://www.raspberrypi.org/downloads/ ), find and download the `Raspberry Pi Imager` for your computer OS, or click on the links above for the corresponding system to directly download and install.   
+#### 2.1.1 Methode A: 'Raspbian' mit 'Raspberry Pi Imager' auf die SD-Karte schreiben
+"Raspberry Pi Imager" ist ein von der Raspberry Pi Organization entwickeltes Tool zum Schreiben von Bildern auf eine SD-Karte. Es wird mit vielen Versionen geliefert, die auf verschiedenen Systemen funktionieren, und es ist ziemlich einfach zu bedienen; Sie müssen lediglich das Betriebssystem und die SD-Karte auswählen, Raspberry Pi Imager lädt die entsprechende Image-Datei für das System herunter und installiert sie auf der SD-Karte.
+
+**Schritt-für-Schritt-Übersicht**
+
+1. Bereiten Sie eine SD-Karte (16 GB oder größer) und einen SD-Kartenleser vor
+2. Laden Sie den `Raspberry Pi Imager` von der offiziellen Website [Offizielle Raspberry Pi-Website] (https://www.raspberrypi.org/downloads/) herunter.
+    - [Raspberry Pi Imager für Windows](https://downloads.raspberrypi.org/imager/imager.exe "Klicken Sie hier, um Raspberry Pi Imager für Windows herunterzuladen)
+    - [Raspberry Pi Imager für macOS](https://downloads.raspberrypi.org/imager/imager.dmg "Klicken Sie hier, um Raspberry Pi Imager für macOS herunterzuladen")
+    - [Raspberry Pi Imager für Ubuntu](https://downloads.raspberrypi.org/imager/imager_amd64.deb "Klicken Sie hier, um Raspberry Pi Imager für Ubuntu herunterzuladen")
+3. Installieren Sie den `Raspberry Pi Imager`
+4. Schreiben Sie das Betriebssystem für Raspberry Pi auf die SD-Karte mit `Raspberry Pi Imager` `Raspbian Full - Eine Portierung von Debian mit Desktop und empfohlener Anwendung`
+5. Lassen Sie die SD-Karte angeschlossen, nachdem der Schreibvorgang abgeschlossen ist. Wir verwenden sie später zum Konfigurieren der SSH- und WLAN-Verbindung.
+
+**Detaillierte Schritte:**
+
+- Öffnen Sie einen Webbrowser auf Ihrem Computer, gehen Sie zur Raspberry Pi-Website [Offizielle Raspberry Pi-Website] (https://www.raspberrypi.org/downloads/), suchen Sie den "Raspberry Pi Imager" für Ihr Computer-Betriebssystem und laden Sie ihn herunter. oder klicken Sie auf die obigen Links für das entsprechende System, um es direkt herunterzuladen und zu installieren.
 
   ![imagerDownload](images/imagerDownload.png)
 
-- Insert the SD card into the card reader, connect the card reader and your computer.   
+- Legen Sie die SD-Karte in den Kartenleser ein, verbinden Sie den Kartenleser und Ihren Computer.
 
-- Run the `Raspberry Pi Imager`, select `CHOOSE OS` -> `Raspbian(other)` -> `Raspbian Full - A port of Debian with desktop and recommended applications`. 
+- Führen Sie den `Raspberry Pi Imager` aus, wählen Sie `CHOOSE OS` -> `Raspbian(other)` -> `Raspbian Full - A Port of Debian with desktop and Recommended applications`.
 
-- Click on `CHOOSE SD CARD` for the SD card to write the `Raspbian Full`, please be noted that the image writing will automatically delete all files on the SD card if any.  
+- Klicken Sie auf "SD-KARTE AUSWÄHLEN", damit die SD-Karte das "Raspbian Full" schreibt. Bitte beachten Sie, dass beim Schreiben des Bildes automatisch alle Dateien auf der SD-Karte gelöscht werden, falls vorhanden.
 
-- Click on `WRITE`, wait for the writing. The `Raspberry Pi Imager` needs to download the `Raspbian` image file during the process. You can download the file following the step in **2.1.2**.  
+- Klicken Sie auf `WRITE`, warten Sie auf das Schreiben. Der `Raspberry Pi Imager` muss während des Vorgangs die `Raspbian`-Image-Datei herunterladen. Sie können die Datei nach dem Schritt in **2.1.2** herunterladen.
 
   ![imagerUse](images/imagerUse.png)
 
-- Do not remove the SD card connected when writing is completed, we'll use for configuring SSH and WiFi connection later. Otherwise, if you remove the card, insert it into the Raspberry Pi and boot, WiFi configuration without any peripherals may fail in the following process.
+- Entfernen Sie nicht die angeschlossene SD-Karte, wenn der Schreibvorgang abgeschlossen ist. Wir verwenden sie später zum Konfigurieren der SSH- und WLAN-Verbindung. Andernfalls, wenn Sie die Karte entfernen, in den Raspberry Pi einsetzen und booten, kann die WLAN-Konfiguration ohne Peripheriegeräte im folgenden Prozess fehlschlagen.
 
 
-#### 2.1.2 Method B: Download the image file `Raspbian` and write it to the SD card manually
-Since the image file is downloaded with the `Raspberry Pi Imager` in **2.1.1**, it can take a long time due to a slow network in some places. You may then manually download the image file `Raspbian` and write it to the SD card with th `Raspberry Pi Imager`.  
+#### 2.1.2 Methode B: Laden Sie die Image-Datei `Raspbian` herunter und schreiben Sie sie manuell auf die SD-Karte
+Da die Image-Datei mit dem `Raspberry Pi Imager` in **2.1.1** heruntergeladen wird, kann es aufgrund eines langsamen Netzwerks an manchen Stellen lange dauern. Sie können dann die Image-Datei `Raspbian` manuell herunterladen und mit dem `Raspberry Pi Imager` auf die SD-Karte schreiben.
 
-**Step-by-Step Overview**
+**Schritt-für-Schritt-Übersicht**
 
-1. Prepare an SD card (16G or larger) and an SD card reader
-2. Download the `Raspberry Pi Imager` on the official website [Official Raspberry Pi website](https://www.raspberrypi.org/downloads/ )
-    - [Raspberry Pi Imager for Windows](https://downloads.raspberrypi.org/imager/imager.exe "Click here to download Raspberry Pi Imager for Windows)
-    - [Raspberry Pi Imager for macOS](https://downloads.raspberrypi.org/imager/imager.dmg "Click here to download Raspberry Pi Imager for macOS")
-    - [Raspberry Pi Imager for Ubuntu](https://downloads.raspberrypi.org/imager/imager_amd64.deb "Click here to download Raspberry Pi Imager for Ubuntu")
-3. Install the `Raspberry Pi Imager`
-4. Download the image file `Raspbian`
-    - Torrent file: 
-    [Raspbian - Raspbian Buster with desktop and recommended software](https://downloads.raspberrypi.org/raspbian_full_latest.torrent "Link to download the torrent file for image")
-    - Zip file: [Raspbian - Raspbian Buster with desktop and recommended software](https://downloads.raspberrypi.org/raspbian_full_latest "Link to download the zip file for image")
-5. Unzip the file, be noted that the path should be in English for the `.img` file extracted, no special characters allowed.
-6. Write the image file `Raspbian` downloaded to the SD card with `Raspberry Pi Imager`
-7. Leave the SD card connected after writing is completed, we'll use for configuring SSH and WiFi connection later.
+1. Bereiten Sie eine SD-Karte (16 GB oder größer) und einen SD-Kartenleser vor
+2. Laden Sie den `Raspberry Pi Imager` von der offiziellen Website [Offizielle Raspberry Pi-Website] (https://www.raspberrypi.org/downloads/) herunter.
+    - [Raspberry Pi Imager für Windows](https://downloads.raspberrypi.org/imager/imager.exe "Klicken Sie hier, um Raspberry Pi Imager für Windows herunterzuladen)
+    - [Raspberry Pi Imager für macOS](https://downloads.raspberrypi.org/imager/imager.dmg "Klicken Sie hier, um Raspberry Pi Imager für macOS herunterzuladen")
+    - [Raspberry Pi Imager für Ubuntu](https://downloads.raspberrypi.org/imager/imager_amd64.deb "Klicken Sie hier, um Raspberry Pi Imager für Ubuntu herunterzuladen")
+3. Installieren Sie den `Raspberry Pi Imager`
+4. Laden Sie die Bilddatei `Raspbian` . herunter
+    - Torrent-Datei:
+    [Raspbian - Raspbian Buster mit Desktop und empfohlener Software](https://downloads.raspberrypi.org/raspbian_full_latest.torrent "Link zum Download der Torrent-Datei für Bild")
+    - Zip-Datei: [Raspbian - Raspbian Buster mit Desktop und empfohlener Software](https://downloads.raspberrypi.org/raspbian_full_latest "Link zum Download der Zip-Datei für das Bild")
+5. Entpacken Sie die Datei, beachten Sie, dass der Pfad für die extrahierte `.img`-Datei in Englisch sein sollte, keine Sonderzeichen erlaubt.
+6. Schreiben Sie die auf die SD-Karte heruntergeladene Bilddatei `Raspbian` mit `Raspberry Pi Imager`
+7. Lassen Sie die SD-Karte angeschlossen, nachdem der Schreibvorgang abgeschlossen ist. Wir verwenden sie später zum Konfigurieren der SSH- und WLAN-Verbindung.
 
-**Detailed Steps:**
+**Detaillierte Schritte:**
 
-- Open a web browser on your computer, go to the Raspberry Pi website[Official Raspberry Pi website], find and download the `Raspberry Pi Imager` for your computer OS, or click on the links above for the corresponding system to directly download and install.   
+- Öffnen Sie einen Webbrowser auf Ihrem Computer, gehen Sie zur Raspberry Pi-Website [Offizielle Raspberry Pi-Website], suchen und laden Sie den "Raspberry Pi Imager" für Ihr Computer-Betriebssystem herunter oder klicken Sie auf die obigen Links, um das entsprechende System direkt herunterzuladen und Installieren.
 
   ![imagerDownload](images/imagerDownload.png)
 
-- On the Raspberry Pi website [Official Raspberry Pi website](https://www.raspberrypi.org/downloads/ ), select through `Downloads` -> `Raspbian` -> `Raspbian Buster with desktop and recommended software`, and click on the torrent or zip file to download. Unzip the file after download, be noted that the path should be in English for the `.img` file extracted, no special characters allowed; otherwise `Raspberry Pi Imager` may not open the `.img` file. It's recommended to save the `.img` file to the root directory of the `C:\` or `D:\` disk, **but do not save `.img` on the SD card**.  
+- Wählen Sie auf der Raspberry Pi-Website [Offizielle Raspberry Pi-Website] (https://www.raspberrypi.org/downloads/ ) über `Downloads` -> `Raspbian` -> `Raspbian Buster mit Desktop und empfohlener Software` und Klicken Sie zum Herunterladen auf die Torrent- oder ZIP-Datei. Entpacken Sie die Datei nach dem Download, beachten Sie, dass der Pfad für die extrahierte `.img`-Datei in Englisch sein sollte, keine Sonderzeichen erlaubt; andernfalls öffnet `Raspberry Pi Imager` die `.img`-Datei möglicherweise nicht. Es wird empfohlen, die Datei `.img` im Stammverzeichnis der Festplatte `C:\` oder `D:\` zu speichern, **aber `.img` nicht auf der SD-Karte zu speichern**.
 
   ![RPiDownload](images/RPiDownload.png)
 
-- Insert the SD card into the card reader, connect the card reader and your computer.   
+- Legen Sie die SD-Karte in den Kartenleser ein, verbinden Sie den Kartenleser und Ihren Computer.
 
-- Run the `Raspberry Pi Imager`, select `CHOOSE OS`, and then `Use custom` to find the `.img` extracted, click `Open`. 
+- Führen Sie den `Raspberry Pi Imager` aus, wählen Sie `CHOOSE OS` und dann `Use custom`, um die extrahierte `.img` zu finden, klicken Sie auf `Open`.
 
-- Select `CHOOSE SD CARD` for the SD card to write the `Raspbian`, please be noted that the image writing will automatically delete all files on the SD card if any.  
+- Wählen Sie "SD-KARTE AUSWÄHLEN" für die SD-Karte, um das "Raspbian" zu schreiben. Bitte beachten Sie, dass beim Schreiben von Bildern automatisch alle Dateien auf der SD-Karte gelöscht werden, falls vorhanden.
 
-- Click on `WRITE`, wait for the writing. 
+- Klicken Sie auf `WRITE`, warten Sie auf das Schreiben.
 
   ![imagerUse](images/imagerUse.png)
 
-- Do not remove the SD card connected when writing is completed, we'll use for configuring SSH and WiFi connection later. Otherwise, if you remove the card, insert it into the Raspberry Pi and boot it up, WiFi configuration without any peripherals may fail in the following process.  
+- Entfernen Sie nicht die angeschlossene SD-Karte, wenn der Schreibvorgang abgeschlossen ist. Wir verwenden sie später zum Konfigurieren der SSH- und WLAN-Verbindung. Andernfalls, wenn Sie die Karte entfernen, in den Raspberry Pi stecken und hochfahren, kann die WLAN-Konfiguration ohne Peripheriegeräte im folgenden Prozess fehlschlagen.
 
-#### 2.1.3 Method C: Manually download the image file provided by us and write it to the SD card (not recommended)
-The Raspbian image file downloaded in **2.1.1** and **2.1.2** is the official source with some preinstalled software. To operate the robot, you may need many dependent libraries. Though we provide the simple script to install them (see details later), failure can happen during installation if the library is not the latest version. Therefore, despite we provide the downloading of the Raspbian image file, it may happen that our image file and the dependent libraries are not most updated versions. Please only use when you encounter the most troublesome situation.   
-**Step-by-Step Overview**  
+#### 2.1.3 Methode C: Laden Sie die von uns bereitgestellte Bilddatei manuell herunter und schreiben Sie sie auf die SD-Karte (nicht empfohlen)
+Die in **2.1.1** und **2.1.2** heruntergeladene Raspbian-Image-Datei ist die offizielle Quelle mit vorinstallierter Software. Um den Roboter zu bedienen, benötigen Sie möglicherweise viele abhängige Bibliotheken. Obwohl wir das einfache Skript für die Installation bereitstellen (siehe Details später), kann es während der Installation zu Fehlern kommen, wenn die Bibliothek nicht die neueste Version ist. Daher kann es trotz der Bereitstellung des Herunterladens der Raspbian-Image-Datei vorkommen, dass unsere Image-Datei und die abhängigen Bibliotheken nicht die aktuellsten Versionen sind. Bitte nur verwenden, wenn Sie auf die schwierigste Situation stoßen.
+**Schritt-für-Schritt-Übersicht**
 
-1. Prepare an SD card (16G or larger) and an SD card reader
-2. Download the `Raspberry Pi Imager` from the official website [Official Raspberry Pi website](https://www.raspberrypi.org/downloads/ )
-    - [Raspberry Pi Imager for Windows](https://downloads.raspberrypi.org/imager/imager.exe "Click here to download Raspberry Pi Imager for Windows")
-    - [Raspberry Pi Imager for macOS](https://downloads.raspberrypi.org/imager/imager.dmg "Click here to download Raspberry Pi Imager for macOS")
-    - [Raspberry Pi Imager for Ubuntu](https://downloads.raspberrypi.org/imager/imager_amd64.deb "Click here to download Raspberry Pi Imager for Ubuntu")
-3. Install the `Raspberry Pi Imager`
-4. Download the image file `Raspbian`
-    - [Image file for the Raspberry Pi Robot](https://adeept-my.sharepoint.com/personal/tomsun_adeept_onmicrosoft_com/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Ftomsun%5Fadeept%5Fonmicrosoft%5Fcom%2FDocuments%2FadeeptRaspTank&originalPath=aHR0cHM6Ly9hZGVlcHQtbXkuc2hhcmVwb2ludC5jb20vOmY6L2cvcGVyc29uYWwvdG9tc3VuX2FkZWVwdF9vbm1pY3Jvc29mdF9jb20vRXZCZmhES1dJVEJLb1ZLejFJTThta01CaWc5SHRiZG9sMXdLQU83WTk5cFJWdz9ydGltZT1rUWxJeE9EMjEwZw)
-5. Unzip the file, be noted that the path should be in English for the `.img` file extracted, no special characters allowed.
-6. Write the image file `Raspbian` downloaded to the SD card with `Raspberry Pi Imager`
-7. Leave the SD card connected after writing is completed, we'll use for configuring SSH and WiFi connection later.
+1. Bereiten Sie eine SD-Karte (16 GB oder größer) und einen SD-Kartenleser vor
+2. Laden Sie den `Raspberry Pi Imager` von der offiziellen Website [Offizielle Raspberry Pi-Website] (https://www.raspberrypi.org/downloads/) herunter.
+    - [Raspberry Pi Imager für Windows](https://downloads.raspberrypi.org/imager/imager.exe "Klicken Sie hier, um Raspberry Pi Imager für Windows herunterzuladen")
+    - [Raspberry Pi Imager für macOS](https://downloads.raspberrypi.org/imager/imager.dmg "Klicken Sie hier, um Raspberry Pi Imager für macOS herunterzuladen")
+    - [Raspberry Pi Imager für Ubuntu](https://downloads.raspberrypi.org/imager/imager_amd64.deb "Klicken Sie hier, um Raspberry Pi Imager für Ubuntu herunterzuladen")
+3. Installieren Sie den `Raspberry Pi Imager`
+4. Laden Sie die Bilddatei `Raspbian` . herunter
+    - [Image-Datei für den Raspberry Pi-Roboter](https://adeept-my.sharepoint.com/personal/tomsun_adeept_onmicrosoft_com/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Ftomsun%5Fadeept%5Fonmicrosoft%5Fcom%2FDocuments% 2FadeeptRaspTank & originalPath = aHR0cHM6Ly9hZGVlcHQtbXkuc2hhcmVwb2ludC5jb20vOmY6L2cvcGVyc29uYWwvdG9tc3VuX2FkZWVwdF9vbm1pY3Jvc29mdF9jb20vRXZCZmhES1dJVEJLb1ZLejFJTThta01CaWc5SHRiZG9sMXdLQU83WTk5cFJWdz9ydGltZT1rUWxJeE9EMjEwZw)
+5. Entpacken Sie die Datei, beachten Sie, dass der Pfad für die extrahierte `.img`-Datei in Englisch sein sollte, keine Sonderzeichen erlaubt.
+6. Schreiben Sie die auf die SD-Karte heruntergeladene Bilddatei `Raspbian` mit `Raspberry Pi Imager`
+7. Lassen Sie die SD-Karte angeschlossen, nachdem der Schreibvorgang abgeschlossen ist. Wir verwenden sie später zum Konfigurieren der SSH- und WLAN-Verbindung.
 
-**Detailed Steps:**  
+**Detaillierte Schritte:**
 
-- Open a web browser on your computer, go to the Raspberry Pi website [Official Raspberry Pi website](https://www.raspberrypi.org/downloads/ ), find and download the `Raspberry Pi Imager` for your computer OS, or click on the links above for the corresponding system to directly download and install.  
+- Öffnen Sie einen Webbrowser auf Ihrem Computer, gehen Sie zur Raspberry Pi-Website [Offizielle Raspberry Pi-Website] (https://www.raspberrypi.org/downloads/), suchen Sie den "Raspberry Pi Imager" für Ihr Computer-Betriebssystem und laden Sie ihn herunter. oder klicken Sie auf die obigen Links für das entsprechende System, um es direkt herunterzuladen und zu installieren.
 
   ![imagerDownload](images/imagerDownload.png)
 
-- Go to our [official website](https://www.adeept.com/ ), find and download the image file - [Image file for the Raspberry Pi Robot](https://adeept-my.sharepoint.com/personal/tomsun_adeept_onmicrosoft_com/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Ftomsun%5Fadeept%5Fonmicrosoft%5Fcom%2FDocuments%2FadeeptRaspTank&originalPath=aHR0cHM6Ly9hZGVlcHQtbXkuc2hhcmVwb2ludC5jb20vOmY6L2cvcGVyc29uYWwvdG9tc3VuX2FkZWVwdF9vbm1pY3Jvc29mdF9jb20vRXZCZmhES1dJVEJLb1ZLejFJTThta01CaWc5SHRiZG9sMXdLQU83WTk5cFJWdz9ydGltZT1rUWxJeE9EMjEwZw). Unzip the file, be noted that the path should be in English for the `.img` file extracted, no special characters allowed. otherwise `Raspberry Pi Imager` may not open the `.img` file. It's recommended to save the `.img` file to the root directory of the `C:\` or `D:\` disk, **but do not save `.img` on the SD card**.  
+- Gehen Sie zu unserer [offiziellen Website](https://www.adeept.com/ ), suchen Sie die Image-Datei und laden Sie sie herunter - [Image-Datei für den Raspberry Pi-Roboter](https://adeept-my.sharepoint.com/ persönlich / tomsun_adeept_onmicrosoft_com / _layouts / 15 / onedrive.aspx? id =% 2Fpersonal% 2Ftomsun% 5Fadeept% 5Fonmicrosoft% 5Fcom% 2FDocuments% 2FadeeptRaspTank & originalPath = aHR0cHM6Ly9hZGVlcHQtbXkuc2hhcmVwb2ludC5jb20vOmY6L2cvcGVyc29uYWwvdG9tc3VuX2FkZWVwdF9vbm1pY3Jvc29mdF9jb20vRXZCZmhES1dJVEJLb1ZLejFJTThta01CaWc5SHRiZG9sMXdLQU83WTk5cFJWdz9ydGltZT1rUWxJeE9EMjEwZw). Entpacken Sie die Datei, beachten Sie, dass der Pfad für die extrahierte `.img`-Datei in Englisch sein sollte, keine Sonderzeichen erlaubt. andernfalls öffnet `Raspberry Pi Imager` die `.img`-Datei möglicherweise nicht. Es wird empfohlen, die Datei `.img` im Stammverzeichnis der Festplatte `C:\` oder `D:\` zu speichern, **aber `.img` nicht auf der SD-Karte zu speichern**.
 
-- Insert the SD card into the card reader, connect the card reader and your computer.   
+- Legen Sie die SD-Karte in den Kartenleser ein, verbinden Sie den Kartenleser und Ihren Computer.
 
-- Run the `Raspberry Pi Imager`, select `CHOOSE OS`, and then `Use custom` to find the `.img` extracted, click `Open`.
+- Führen Sie den `Raspberry Pi Imager` aus, wählen Sie `CHOOSE OS` und dann `Use custom`, um die extrahierte `.img` zu finden, klicken Sie auf `Open`.
 
-- Select `CHOOSE SD CARD` for the SD card to write the `Raspbian`, please be noted that the image writing will automatically delete all files on the SD card if any.  
+- Wählen Sie "SD-KARTE AUSWÄHLEN" für die SD-Karte, um das "Raspbian" zu schreiben. Bitte beachten Sie, dass beim Schreiben von Bildern automatisch alle Dateien auf der SD-Karte gelöscht werden, falls vorhanden.
 
-- Click on `WRITE`, wait for the writing.  
+- Klicken Sie auf `WRITE`, warten Sie auf das Schreiben.
 
   ![imagerUse](images/imagerUse.png)
 
-- Do not remove the SD card connected when writing is completed, we'll use for configuring SSH and WiFi connection later. Otherwise, if you remove the card, insert it into the Raspberry Pi and boot it up, WiFi configuration without any peripherals may fail in the following process.  
+- Entfernen Sie nicht die angeschlossene SD-Karte, wenn der Schreibvorgang abgeschlossen ist. Wir verwenden sie später zum Konfigurieren der SSH- und WLAN-Verbindung. Andernfalls, wenn Sie die Karte entfernen, in den Raspberry Pi stecken und hochfahren, kann die WLAN-Konfiguration ohne Peripheriegeräte im folgenden Prozess fehlschlagen.
 
-### 2.2 Enable SSH Server of Raspberry Pi 
-- By SSH (Secure Shell) server, you can use the command line of Raspberry Pi remotely on another device. In the subsequent operation and when using the Raspberry Pi, you don't have to connect a mouse, keyboard, or monitor to it, but simply control it on a computer in the same LAN.   
-- As of the November 2016 release, Raspbian has the SSH server disabled by default. You will have to enable it manually.  
-- The method to enable the SSH in this documentation can be referred to the Raspberry Pi official website [SSH(Secure Shell)](https://www.raspberrypi.org/documentation/remote-access/ssh/)  
+### 2.2 SSH-Server des Raspberry Pi aktivieren
+- Per SSH (Secure Shell) Server können Sie die Kommandozeile des Raspberry Pi remote auf einem anderen Gerät verwenden. Im späteren Betrieb und bei der Nutzung des Raspberry Pi müssen Sie keine Maus, Tastatur oder Monitor daran anschließen, sondern einfach an einem Computer im selben LAN steuern.
+- Seit der Version vom November 2016 ist bei Raspbian der SSH-Server standardmäßig deaktiviert. Sie müssen es manuell aktivieren.
+- Die Methode zum Aktivieren von SSH in dieser Dokumentation finden Sie auf der offiziellen Raspberry Pi-Website [SSH(Secure Shell)](https://www.raspberrypi.org/documentation/remote-access/ssh/)
 
-#### 2.2.1 Method A: Enable SSH with peripherals
-- If you've connected a mouse, keyboard, or monitor to the Raspberry Pi, follow these steps to enable SSH.   
+#### 2.2.1 Methode A: SSH mit Peripheriegeräten aktivieren
+- Wenn Sie eine Maus, Tastatur oder einen Monitor an den Raspberry Pi angeschlossen haben, führen Sie diese Schritte aus, um SSH zu aktivieren.
 
-    1. Remove the SD card from the computer, insert it to the Raspberry Pi, connect a mouse, keyboard, and monitor to the Raspberry Pi, boot it up.   
-    2. Go to `Preferences` menu, select `Raspberry Pi Configuration`.
-    3. Go to `Interfaces` option. 
-    4. Select `Enable` next to `SSH`.
-    5. Click on `OK`.  
+    1. Entfernen Sie die SD-Karte aus dem Computer, stecken Sie sie in den Raspberry Pi ein, schließen Sie eine Maus, Tastatur und einen Monitor an den Raspberry Pi an, booten Sie ihn.
+    2. Gehen Sie zum Menü "Einstellungen" und wählen Sie "Raspberry Pi-Konfiguration".
+    3. Gehen Sie zur Option `Schnittstellen`.
+    4. Wählen Sie `Aktivieren` neben `SSH`.
+    5. Klicken Sie auf `OK`.
     
     ![configSSH](images/configSSH.png)
 
-#### 2.2.2 Method A: Enable SSH without peripherals
-- If you haven't connected any monitor to the Raspberry Pi, follow these steps to enable SSH.  
+#### 2.2.2 Methode A: SSH ohne Peripheriegeräte aktivieren
+- Wenn Sie keinen Monitor an den Raspberry Pi angeschlossen haben, führen Sie diese Schritte aus, um SSH zu aktivieren.
 
-    1. Do not remove the SD card after `Raspberry Pi Imager` writes the image file.  
+    1. Entfernen Sie die SD-Karte nicht, nachdem `Raspberry Pi Imager` die Image-Datei geschrieben hat.
 
-    2. Create a file named `ssh` under any directory, without any extension name. You may create a `ssh.txt` and delete the `.txt` (make sure under Folder Options the box of Hide extensions for known file types is unchecked. Then you have an `ssh` file without extension name.   
+    2. Erstellen Sie eine Datei namens `ssh` in einem beliebigen Verzeichnis ohne Erweiterungsnamen. Sie können eine `ssh.txt` erstellen und die `.txt` löschen.
 
-    3. Copy the `ssh` file and paste to the root directory of the SD card. The Raspberry Pi will auto search for the `ssh` file when booting, and enable SSH if the file is found. You only need to copy for one time because the Raspberry Pi then will automatically enable SSH at every boot.   
+    3. Kopieren Sie die `ssh`-Datei und fügen Sie sie in das Stammverzeichnis der SD-Karte ein. Der Raspberry Pi sucht beim Booten automatisch nach der `ssh`-Datei und aktiviert SSH, wenn die Datei gefunden wird. Sie müssen nur einmal kopieren, da der Raspberry Pi dann bei jedem Booten automatisch SSH aktiviert.
 
-    4. Do not remove the SD card if you need to configure WiFi. 
+    4. Entfernen Sie die SD-Karte nicht, wenn Sie WLAN konfigurieren müssen.
 
-### 2.3 Configure WiFi on Raspberry Pi 
-There are many ways to connect WiFi for Raspberry Pi. Two methods are provided in this documentation; you may visit the official Raspberry Pi website for more: [Wireless connectivity](https://www.raspberrypi.org/documentation/configuration/wireless/README.md).
-#### 2.3.1 Method A: WiFi connection with peripherals 
-- If you've connected a mouse, keyboard, or monitor to the Raspberry Pi, follow these steps to configure WiFi. 
+### 2.3 WLAN auf Raspberry Pi konfigurieren
+Es gibt viele Möglichkeiten, WLAN für Raspberry Pi zu verbinden. In dieser Dokumentation werden zwei Methoden bereitgestellt; Weitere Informationen finden Sie auf der offiziellen Raspberry Pi-Website: [Wireless-Konnektivität](https://www.raspberrypi.org/documentation/configuration/wireless/README.md).
+#### 2.3.1 Methode A: WiFi-Verbindung mit Peripheriegeräten
+- Wenn Sie eine Maus, Tastatur oder einen Monitor an den Raspberry Pi angeschlossen haben, führen Sie diese Schritte aus, um WLAN zu konfigurieren.
 
-    1. Remove the SD card from the computer, insert it to the Raspberry Pi, connect a mouse, keyboard, and monitor to the Raspberry Pi, boot it up.   
-    2. Select the WiFi icon at the top right corner on the monitor, find the WiFi to connect and select.
-    3. Type in the password for the WiFi, connect. 
-    4. After it's connected successfully, the WiFi will be saved and the Raspberry Pi will auto connect for next boot, so you don't need to connect peripherals every time. 
+    1. Entfernen Sie die SD-Karte aus dem Computer, stecken Sie sie in den Raspberry Pi ein, schließen Sie eine Maus, Tastatur und einen Monitor an den Raspberry Pi an, booten Sie ihn.
+    2. Wählen Sie das WiFi-Symbol in der oberen rechten Ecke des Monitors aus, suchen Sie das zu verbindende WiFi und wählen Sie es aus.
+    3. Geben Sie das Passwort für das WLAN ein, verbinden Sie sich.
+    4. Nach erfolgreicher Verbindung wird das WLAN gespeichert und der Raspberry Pi verbindet sich automatisch für den nächsten Start, sodass Sie nicht jedes Mal Peripheriegeräte anschließen müssen.
 
-#### 2.3.2 Method A: WiFi connection without peripherals 
-- If you haven't connected any monitor to the Raspberry Pi, follow these steps to configure WiFi.  
-- This method is based on the [official documentation](https://www.raspberrypi.org/documentation/configuration/wireless/headless.md)  
+#### 2.3.2 Methode A: WLAN-Verbindung ohne Peripheriegeräte
+- Wenn Sie keinen Monitor mit dem Raspberry Pi verbunden haben, gehen Sie wie folgt vor, um WLAN zu konfigurieren.
+- Diese Methode basiert auf der [offiziellen Dokumentation](https://www.raspberrypi.org/documentation/configuration/wireless/headless.md)
 
-    1. Do not remove the SD card after `Raspberry Pi Imager` has written the image file. (This method works for the situation that the Raspbian image file has just been written to the SD card; if you've already plugged the SD card into the Raspberry Pi and got it rebooted after the image file being written, the configuration may fail.)  
+    1. Entfernen Sie die SD-Karte nicht, nachdem `Raspberry Pi Imager` die Bilddatei geschrieben hat. (Diese Methode funktioniert für den Fall, dass die Raspbian-Image-Datei gerade auf die SD-Karte geschrieben wurde; wenn Sie die SD-Karte bereits in den Raspberry Pi gesteckt und nach dem Schreiben der Image-Datei neu gestartet haben, kann die Konfiguration fehlschlagen. )
 
-    2. Create a file named `wpa_supplicant.conf` anywhere in your computer.   
+    2. Erstellen Sie irgendwo auf Ihrem Computer eine Datei namens `wpa_supplicant.conf`.
     
-    3. Open the file `wpa_supplicant.conf` created with Textbook, enter the following code:   
+    3. Öffnen Sie die mit Textbook erstellte Datei `wpa_supplicant.conf` und geben Sie den folgenden Code ein:
 
     ```
     ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
     update_config=1
-    country=Insert country code here
-    network={
-     ssid="Name of your WiFi"
-     psk="Password for your WiFi"
+    country=Geben Sie hier den Ländercode ein
+    Netzwerk={
+     ssid="Name Ihres WLANs"
+     psk="Passwort für Ihr WLAN"
     }
     ```
 
-    4. TYpe in your own information for `Insert country code here`, `Name of your WiFi`, and `Password for your WiFi`. Pay attention to the capitalization. Refer to the example below:   
+    4. Geben Sie Ihre eigenen Informationen für `Ländercode hier einfügen`, `Name Ihres WLANs` und `Passwort für Ihr WLAN` ein. Achten Sie auf die Groß-/Kleinschreibung. Siehe folgendes Beispiel:
 
     ```
     ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
     update_config=1
-    country=US
-    network={
-     ssid="MyName"
+    Land=USA
+    Netzwerk={
+     ssid="MeinName"
      psk="12345678"
     }
     ```
 
-    5. Save and exit. Copy the `wpa_supplicant.conf` to the root directory of the SD card.   
+    5. Speichern und beenden. Kopieren Sie die `wpa_supplicant.conf` in das Stammverzeichnis der SD-Karte.
 
-    6. If you've alreay copied the file `ssh` to the SD card as instructed in **2.2**, then both the WiFi and SSH settings without peripherals are done. You may remove the SD card, insert it into the Raspberry Pi, and boot it up.   
+    6. Wenn Sie die Datei `ssh` bereits wie in **2.2** beschrieben auf die SD-Karte kopiert haben, sind sowohl die WLAN- als auch die SSH-Einstellungen ohne Peripheriegeräte durchgeführt. Sie können die SD-Karte entfernen, in den Raspberry Pi einlegen und hochfahren.
     
-    7. For more about the file `wpa_supplicant.conf`, refer to the official documentation [WIRELESS-CLI](https://www.raspberrypi.org/documentation/configuration/wireless/wireless-cli.md)
+    7. Weitere Informationen zur Datei `wpa_supplicant.conf` finden Sie in der offiziellen Dokumentation [WIRELESS-CLI](https://www.raspberrypi.org/documentation/configuration/wireless/wireless-cli.md)
 
-## 3. Software Installation & Operation on Raspberry Pi 
-- If you followed the steps in **2.2.1** and **2.3.1** for SSH and WiFi configuration, you may remove the peripherals now and use SSH to remotely control the Raspberry Pi later on.   
+## 3. Softwareinstallation & Betrieb auf Raspberry Pi
+- Wenn Sie die Schritte in **2.2.1** und **2.3.1** für die SSH- und WiFi-Konfiguration befolgt haben, können Sie jetzt die Peripheriegeräte entfernen und später SSH verwenden, um den Raspberry Pi fernzusteuern.
 
-- If you followed the steps in **2.2.2** and **2.3.2**, you may now insert the SD card into the Raspberry Pi and boot it up. The Raspberry Pi will auto boot and connect WiFi when powered on, with no need of peripherals.
+- Wenn Sie die Schritte in **2.2.2** und **2.3.2** befolgt haben, können Sie nun die SD-Karte in den Raspberry Pi einlegen und diesen hochfahren. Der Raspberry Pi bootet automatisch und verbindet sich beim Einschalten mit WLAN, ohne dass Peripheriegeräte erforderlich sind.
 
-- Some steps mentioned below are based on the official Raspberry Pi documentation [SSH](https://www.raspberrypi.org/documentation/remote-access/ssh/).  
+- Einige der unten aufgeführten Schritte basieren auf der offiziellen Raspberry-Pi-Dokumentation [SSH](https://www.raspberrypi.org/documentation/remote-access/ssh/).
 
-- For power supply of the Raspberry Pi, refer to the official documentation[Power supply](https://www.raspberrypi.org/documentation/hardware/raspberrypi/power/README.md).
+- Informationen zur Stromversorgung des Raspberry Pi finden Sie in der offiziellen Dokumentation [Stromversorgung](https://www.raspberrypi.org/documentation/hardware/raspberrypi/power/README.md).
 
-- The Robot HAT board of the Adeept Raspberry Pi Robot can supply power for the Raspberry Pi via GPIO port. However, since it may take a long time to install software on the Raspberry Pi, it's not recommended to supply with the batteries during this process. You may skip the installation of the Robot HAT board or camera during software installation; though you need to make sure the driver board and camera for the Raspberry Pi when it's ready yto run the software installed, or a program error will occur.  
+- Das Robot HAT Board des Adeept Raspberry Pi Robot kann den Raspberry Pi über den GPIO-Port mit Strom versorgen. Da die Installation der Software auf dem Raspberry Pi jedoch längere Zeit in Anspruch nehmen kann, wird davon abgeraten, die Batterien während dieses Vorgangs mitzuliefern. Sie können die Installation des Robot HAT-Boards oder der Kamera während der Softwareinstallation überspringen; Sie müssen jedoch sicherstellen, dass die Treiberplatine und die Kamera für den Raspberry Pi bereit sind, um die installierte Software auszuführen, da sonst ein Programmfehler auftritt.
 
-### 3.1 Log into Raspberry Pi (Windows 10)
-- For Windows 10, SSH is built in the versions after October 2018, so you don't need any third-party software.   
+### 3.1 Bei Raspberry Pi anmelden (Windows 10)
+- Für Windows 10 ist SSH in den Versionen nach Oktober 2018 eingebaut, Sie benötigen also keine Software von Drittanbietern.
 
-- For lower versions of Windows OS, SSH is not built in, and you may log into the Raspberry Pi by referring to the official documentation [SSH using Windows](https://www.raspberrypi.org/documentation/remote-access/ssh/windows.md). 
+- Bei niedrigeren Versionen des Windows-Betriebssystems ist SSH nicht integriert, und Sie können sich in der offiziellen Dokumentation [SSH using Windows] (https://www.raspberrypi.org/documentation/remote-access/) beim Raspberry Pi anmelden. ssh/windows.md).
 
-- Before connecting the Raspberry Pi via SSH, you need to know the IP address of the Raspberry Pi. Check the Management interface for your router, or download the app `Network Scanner` -> search for a device named `RASPBERRY` or `Raspberry Pi Foundation` to get the IP address.  
+- Bevor Sie den Raspberry Pi per SSH verbinden, müssen Sie die IP-Adresse des Raspberry Pi kennen. Überprüfen Sie die Verwaltungsoberfläche Ihres Routers oder laden Sie die App `Network Scanner` herunter -> suchen Sie nach einem Gerät namens `RASPBERRY` oder `Raspberry Pi Foundation`, um die IP-Adresse zu erhalten.
 
-- For other methods of obtaining the IP address of Raspberry Pi, refer to the official documentation [IP Address](https://www.raspberrypi.org/documentation/remote-access/ip-address.md)  
+- Weitere Methoden zum Abrufen der IP-Adresse des Raspberry Pi finden Sie in der offiziellen Dokumentation [IP-Adresse] (https://www.raspberrypi.org/documentation/remote-access/ip-address.md)
 
-- Press the keys <kbd>win</kbd>+<kbd>R</kbd>, type in `cmd`, and press <kbd>enter</kbd>.
+- Drücken Sie die Tasten <kbd>win</kbd>+<kbd>R</kbd>, geben Sie `cmd` ein und drücken Sie <kbd>Enter</kbd>.
 
-- The default user is `pi`, and the password is `raspberry`. 
+- Der Standardnutzer ist "pi" und das Passwort ist "raspberry".
 
-- Type in `ssh pi@<IP>` in the command line, replace the `<IP>` with the IP address of your Raspberry Pi, as shown below:  
+- Geben Sie `ssh pi@<IP>` in die Befehlszeile ein, ersetzen Sie das `<IP>` durch die IP-Adresse Ihres Raspberry Pi, wie unten gezeigt:
 
-    >ssh pi@192.168.3.161  
+    >ssh pi@192.168.3.161
 
-- Press Enter key and a prompt will appear: `Are you sure you want to continue connecting (yes/no)?`  
+- Drücken Sie die Eingabetaste und es erscheint eine Eingabeaufforderung: `Sind Sie sicher, dass Sie die Verbindung fortsetzen möchten (ja/nein)?`
 
-- Type in `yes`, press Enter and it'll show `pi@192.168.3.161's password:`, type in the initial password of the Raspberry Pi, `raspberry` (pay attention to capitalization). There's no change on the screen when you're typing in, but it doesn't mean you're not entering the information. Press <kbd>enter</kbd> after you finish typing in. 
+- Geben Sie `yes` ein, drücken Sie die Eingabetaste und es wird `pi@192.168.3.161's password:` angezeigt, geben Sie das anfängliche Passwort des Raspberry Pi ein, `raspberry` (achten Sie auf die Groß-/Kleinschreibung). Während der Eingabe ändert sich der Bildschirm nicht, aber das bedeutet nicht, dass Sie die Informationen nicht eingeben. Drücken Sie die <kbd>Eingabetaste</kbd>, nachdem Sie mit der Eingabe fertig sind.
 
-- So now you've logged into the Raspberry Pi.   
+- Jetzt haben Sie sich also beim Raspberry Pi angemeldet.
 
 ![winSSH](images/winSSH.png)
 
-### 3.2 Log into Raspberry Pi (Linux or Mac OS)
+### 3.2 Bei Raspberry Pi anmelden (Linux oder Mac OS)
 
-- Before connecting the Raspberry Pi via SSH, you need to know the IP address of the Raspberry Pi. Check the Management interface for your router, or download the app `Network Scanner` -> search for a device named `RASPBERRY` or `Raspberry Pi Foundation` to get the IP address.  
+- Bevor Sie den Raspberry Pi per SSH verbinden, müssen Sie die IP-Adresse des Raspberry Pi kennen. Überprüfen Sie die Verwaltungsoberfläche Ihres Routers oder laden Sie die App `Network Scanner` herunter -> suchen Sie nach einem Gerät namens `RASPBERRY` oder `Raspberry Pi Foundation`, um die IP-Adresse zu erhalten.
 
-- For other methods of obtaining the IP address of Raspberry Pi, refer to the official documentation [IP Address](https://www.raspberrypi.org/documentation/remote-access/ip-address.md)  
+- Weitere Methoden zum Abrufen der IP-Adresse des Raspberry Pi finden Sie in der offiziellen Dokumentation [IP-Adresse] (https://www.raspberrypi.org/documentation/remote-access/ip-address.md)
 
-- Open the terminal window (or command line)   
+- Öffnen Sie das Terminalfenster (oder die Befehlszeile)
 
-- The default user is `pi`, and the password is `raspberry`. 
+- Der Standardnutzer ist "pi" und das Passwort ist "raspberry".
 
-- Type in `ssh pi@<IP>` in the command line, replace `<IP>` with the IP address of your Raspberry Pi as shown below:   
+- Geben Sie `ssh pi@<IP>` in die Befehlszeile ein, ersetzen Sie `<IP>` durch die IP-Adresse Ihres Raspberry Pi wie unten gezeigt:
 
-    >ssh pi@192.168.3.161  
+    >ssh pi@192.168.3.161
 
-- Press Enter key and a prompt will appear: `Are you sure you want to continue connecting (yes/no)?`  
+- Drücken Sie die Eingabetaste und eine Eingabeaufforderung wird angezeigt: `Sind Sie sicher, dass Sie die Verbindung fortsetzen möchten (ja/nein)?`
 
-- Type in `yes`, press Enter and it'll show `pi@192.168.3.161's password:`, type in the initial password of the Raspberry Pi, `raspberry` (pay attention to capitalization). There's no change on the screen when you're typing in, but it doesn't mean you're not entering the information. Press <kbd>enter</kbd> after you finish typing in.   
+- Geben Sie `yes` ein, drücken Sie die Eingabetaste und es wird `pi@192.168.3.161's password:` angezeigt, geben Sie das anfängliche Passwort des Raspberry Pi ein, `raspberry` (achten Sie auf die Groß-/Kleinschreibung). Während der Eingabe ändert sich der Bildschirm nicht, aber das bedeutet nicht, dass Sie die Informationen nicht eingeben. Drücken Sie die <kbd>Eingabetaste</kbd>, nachdem Sie mit der Eingabe fertig sind.
 
-- So now you've logged into the Raspberry Pi.   
+- Jetzt haben Sie sich also beim Raspberry Pi angemeldet.
 
-### 3.3 Log into Raspberry Pi (Windows)
-- For lower versions of Windows OS, SSH is not built in, and you may log into the Raspberry Pi by referring to the official documentation Raspberry Pi[SSH using Windows](https://www.raspberrypi.org/documentation/remote-access/ssh/windows.md).  
-- Before connecting the Raspberry Pi via SSH, you need to know the IP address of the Raspberry Pi. Check the Management interface for your router, or download the app `Network Scanner` -> search for a device named `RASPBERRY` or `Raspberry Pi Foundation` to get the IP address.  
-- For other methods of obtaining the IP address of Raspberry Pi, refer to the official documentation [IP Address](https://www.raspberrypi.org/documentation/remote-access/ip-address.md)  
-- You may need to download the `PuTTY` version for your OS and log into Raspberry Pi with the tool. [Click here to download PuTTY](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html)  
-- Run `PuTTY`, type in the IP address of Raspberry Pi for `Host Name`, and click <kbd>Open</kbd>.  
-- If a prompt of `Network error: Connection timed out` appears, possibly you've entered an incorrect IP address.   
-- When the connection works you will see the security warning shown below. You can safely ignore it, and click the 'Yes' button. You will only see this warning the first time PuTTY connects to a Raspberry Pi that it has not seen before.  
-- You will now see the usual login prompt. Log in with the same username and password you would use on the Pi itself. The default login for Raspbian is `pi` with the password `raspberry`.  
-- You should now have the Raspberry Pi prompt which will be identical to the one found on the Raspberry Pi itself.  
+### 3.3 Bei Raspberry Pi anmelden (Windows)
+- Für niedrigere Versionen des Windows-Betriebssystems ist SSH nicht integriert, und Sie können sich beim Raspberry Pi anmelden, indem Sie sich auf die offizielle Dokumentation Raspberry Pi [SSH using Windows] (https://www.raspberrypi.org/documentation/remote- access/ssh/windows.md).
+- Bevor Sie den Raspberry Pi per SSH verbinden, müssen Sie die IP-Adresse des Raspberry Pi kennen. Überprüfen Sie die Verwaltungsoberfläche Ihres Routers oder laden Sie die App `Network Scanner` herunter -> suchen Sie nach einem Gerät namens `RASPBERRY` oder `Raspberry Pi Foundation`, um die IP-Adresse zu erhalten.
+- Weitere Methoden zum Abrufen der IP-Adresse des Raspberry Pi finden Sie in der offiziellen Dokumentation [IP-Adresse] (https://www.raspberrypi.org/documentation/remote-access/ip-address.md)
+- Möglicherweise müssen Sie die `PuTTY`-Version für Ihr Betriebssystem herunterladen und sich mit dem Tool bei Raspberry Pi anmelden. [Klicken Sie hier, um PuTTY herunterzuladen](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html)
+- Führen Sie `PuTTY` aus, geben Sie die IP-Adresse des Raspberry Pi als `Host Name` ein und klicken Sie auf <kbd>Öffnen</kbd>.
+- Wenn die Meldung `Network error: Connection timed out` erscheint, haben Sie möglicherweise eine falsche IP-Adresse eingegeben.
+- Wenn die Verbindung funktioniert, sehen Sie die unten angezeigte Sicherheitswarnung. Sie können es getrost ignorieren und auf die Schaltfläche "Ja" klicken. Sie sehen diese Warnung nur, wenn sich PuTTY zum ersten Mal mit einem Raspberry Pi verbindet, den es noch nie zuvor gesehen hat.
+- Sie sehen nun die übliche Anmeldeaufforderung. Melden Sie sich mit demselben Benutzernamen und Passwort an, das Sie auf dem Pi selbst verwenden würden. Der Standard-Login für Raspbian ist `pi` mit dem Passwort `raspberry`.
+- Sie sollten jetzt die Raspberry Pi-Eingabeaufforderung haben, die mit der auf dem Raspberry Pi selbst identisch ist.
 
-![putty](images/putty.png)
+![Putty](images/putty.png)
 
-### 3.4 Download Program of the Raspberry Pi Robot 
+### 3.4 Download-Programm des Raspberry Pi-Roboters
 
-- The code for the robot product has been uploaded to [GitHub], you may need to download to your Raspberry Pi and install the corresponding dependent libraries to run the program.   
+- Der Code für das Roboterprodukt wurde auf [GitHub] hochgeladen. Möglicherweise müssen Sie ihn auf Ihren Raspberry Pi herunterladen und die entsprechenden abhängigen Bibliotheken installieren, um das Programm auszuführen.
 
-- In the previous section you've logged into the Raspberry Pi, and here type in the follow command in the terminal window:
+- Im vorherigen Abschnitt haben Sie sich beim Raspberry Pi angemeldet und geben hier den folgenden Befehl im Terminalfenster ein:
 
-    >sudo git clone https://github.com/adeept/adeept_rasptank.git
+    >sudo git-klon https://github.com/adeept/adeept_rasptank.git
 
-- Press <kbd>enter</kbd> to start downloading the program of the robot from GitHub. It may take some time, please wait until it's done.  
+- Drücken Sie <kbd>Enter</kbd>, um das Programm des Roboters von GitHub herunterzuladen. Es kann einige Zeit dauern, bitte warten Sie, bis es fertig ist.
 
-### 3.5 Install Corresponding Dependent Libraries 
-- Follow the steps below to install the libraries if you wrote the image file to the SD card based on **2.1.1 Write 'Raspbian' to the SD card by `Raspberry Pi Imager`** and **2.1.2 Download the image file `Raspbian` and write it to the SD card manually**.   
+### 3.5 Entsprechende abhängige Bibliotheken installieren
+- Befolgen Sie die nachstehenden Schritte, um die Bibliotheken zu installieren, wenn Sie die Bilddatei basierend auf **2.1.1 Schreiben Sie 'Raspbian' mit `Raspberry Pi Imager`** auf die SD-Karte geschrieben und **2.1.2 Laden Sie die Image-Datei `Raspbian` und schreibe sie manuell auf die SD-Karte**.
 
-- But you should **skip this section** if you wrote the image file to the SD card based on **2.1.3 Manually download the image file provided by us and write it to the SD card**; refer to **2.4.5** for configuration of auto start program. 
+- Sie sollten jedoch **diesen Abschnitt überspringen**, wenn Sie die Bilddatei auf Grundlage von **2.1.3 auf die SD-Karte geschrieben haben. Laden Sie die von uns bereitgestellte Bilddatei manuell herunter und schreiben Sie sie auf die SD-Karte**; siehe **2.4.5** für die Konfiguration des Autostart-Programms.
 
-- Here a script is provided for installing all dependent libraries needed and configuration of starting the camera and other auto start programs.   
+- Hier wird ein Skript bereitgestellt, um alle benötigten abhängigen Bibliotheken zu installieren und den Start der Kamera und anderer Autostart-Programme zu konfigurieren.
 
-- Type in the code below in the terminal window to run the dependent libraries for the script `setup.py`:  
+- Geben Sie den folgenden Code in das Terminalfenster ein, um die abhängigen Bibliotheken für das Skript `setup.py` auszuführen:
 
-    >sudo python3 adeept_rasptank/setup.py
+    > sudo python3 adeept_rasptank/setup.py
 
-- Press <kbd>enter</kbd> and the script will auto run. This may take minutes or hours, depending on the network status. Please wait until it's done.  
+- Drücken Sie <kbd>Enter</kbd> und das Skript wird automatisch ausgeführt. Dies kann je nach Netzwerkstatus Minuten oder Stunden dauern. Bitte warten Sie, bis es fertig ist.
 
-- After installation is completed, the following prompts will appear: 
+- Nach Abschluss der Installation werden die folgenden Eingabeaufforderungen angezeigt:
 
-    >The program in Raspberry Pi has been installed, disconnected and restarted.  
-    >You can now power off the Raspberry Pi to install the camera and driver board (Robot HAT). After turning on again, the Raspberry Pi will automatically run the program to set the servos port signal to turn the servos to the middle position, which is convenient for mechanical assembly.
+    >Das Programm im Raspberry Pi wurde installiert, getrennt und neu gestartet.
+    >Sie können jetzt den Raspberry Pi ausschalten, um die Kamera und die Treiberplatine (Robot HAT) zu installieren. Nach dem erneuten Einschalten führt der Raspberry Pi automatisch das Programm aus, um das Servo-Port-Signal zu setzen, um die Servos in die mittlere Position zu drehen, was für die mechanische Montage praktisch ist.
 
-- When installation is completed, the Raspberry Pi will automatically disconnect SSH and reboot. If you used puTTy to connect the Raspberry Pi, there can be an error prompt like `Network error:Software caused connection abort`. You can just ignore and close it.  
+- Wenn die Installation abgeschlossen ist, trennt der Raspberry Pi automatisch SSH und startet neu. Wenn Sie puTTy verwendet haben, um den Raspberry Pi zu verbinden, kann es zu einer Fehlermeldung wie `Netzwerkfehler: Software verursachte Verbindungsabbruch` kommen. Sie können es einfach ignorieren und schließen.
 
-### 3.6 Run the Raspberry Pi Robot's Program
+### 3.6 Führen Sie das Programm des Raspberry Pi-Roboters aus
 
-- Raspberry Pi auto runs the program for the robot when rebooting every time, which is the part `[RobotName]/server/webServer.py` (replace `[RobotName]` for the name of the folder for your robot product's program). However, if the Raspberry Pi camera or RobotHAT is not connected, the `webServer.py` can't run well. It makes sense because the robot's program needs the camera and the chipset PCA9685. RobotHAT controls servo with PCA9685; the Raspberry Pi communicates with PCA9685 via I2C; so if Robot HAT is not connected to Raspberry Pi, a program error will occur when instantiating dependent libraries for PCA9685 due to communication failure. 
+- Raspberry Pi führt bei jedem Neustart automatisch das Programm für den Roboter aus. Dies ist der Teil `[RobotName]/server/webServer.py` (ersetzen Sie `[RobotName]` durch den Namen des Ordners für das Programm Ihres Roboterprodukts). Wenn die Raspberry Pi-Kamera oder RobotHAT jedoch nicht angeschlossen ist, kann der `webServer.py` nicht richtig laufen. Dies ist sinnvoll, da das Programm des Roboters die Kamera und den Chipsatz PCA9685 benötigt. RobotHAT steuert Servo mit PCA9685; der Raspberry Pi kommuniziert mit PCA9685 über I2C; Wenn Robot HAT also nicht mit Raspberry Pi verbunden ist, tritt bei der Instanziierung abhängiger Bibliotheken für PCA9685 aufgrund eines Kommunikationsfehlers ein Programmfehler auf.
 
-- Power off the Raspberry Pi, connect camera module and RobotHAT, reboot it up and now `webServer.py` can run.   
+- Raspberry Pi ausschalten, Kameramodul und RobotHAT verbinden, neu starten und nun kann `webServer.py` laufen.
 
-- Generally you don't need to manually run `webServer.py` since it's auto run by Raspberry Pi at every boot.   
+- Im Allgemeinen müssen Sie `webServer.py` nicht manuell ausführen, da es bei jedem Start automatisch von Raspberry Pi ausgeführt wird.
 
-- Open a web browser (Google Chrome for example), in the address bar type in the IP address of the Raspberry Pi, add `:5000` to the end as shown below, and press <kbd>enter</kbd> to redirect to the webpage of the Raspberry Pi:   
+- Öffnen Sie einen Webbrowser (zum Beispiel Google Chrome), geben Sie in der Adressleiste die IP-Adresse des Raspberry Pi ein, fügen Sie wie unten gezeigt `:5000` am Ende hinzu und drücken Sie <kbd>Enter</kbd>, um umzuleiten zur Webseite des Raspberry Pi:
 
     >http://192.168.3.161:5000/
 
-- If it fails to enter the page, log into the Raspberry Pi via SSH, type in the command below to end the program auto run at boot to release resources, or else issues like camera initialization failure or occupied ports.   
+- Wenn die Seite nicht aufgerufen werden kann, melden Sie sich über SSH am Raspberry Pi an, geben Sie den folgenden Befehl ein, um die automatische Ausführung des Programms beim Booten zu beenden, um Ressourcen freizugeben, oder Probleme wie ein Fehler bei der Kamerainitialisierung oder belegte Ports.
 
-    >sudo killall python3
+    > sudo killall python3
 
-- Type in the command below to run `webServer.py`: 
+- Geben Sie den folgenden Befehl ein, um `webServer.py` auszuführen:
 
-    >sudo python3 adeept_rasptank/server/webServer.py  
+    > sudo python3 adeept_rasptank/server/webServer.py
 
-- Check whether there's any error and solve them based on instructions in the Q&A section below.   
+- Überprüfen Sie, ob ein Fehler vorliegt, und beheben Sie ihn gemäß den Anweisungen im Abschnitt Fragen und Antworten unten.
 
-## 4. Precautions for Structure Assembly
-#### 4.1 Documentation for structure assembly
-- [Documentation for structure assembly](https://www.adeept.com/learn)
+## 4. Vorsichtsmaßnahmen für die Strukturmontage
+#### 4.1 Dokumentation zur Strukturmontage
+- [Dokumentation zur Strukturmontage](https://www.adeept.com/learn)
 
-#### 4.2 Precautions for Structure Assembly
-- Since many servos are used in the product, the servo installation is critical for the robot. Before installing the rocker arm to the servo, you need to connect the servo to power and make the servo shaft rotate to the central position, so the rocker arm installed at the designated degree will be in the central position.   
+#### 4.2 Vorsichtsmaßnahmen für die Strukturmontage
+- Da im Produkt viele Servos verwendet werden, ist die Servoinstallation für den Roboter kritisch. Bevor Sie den Kipphebel am Servo anbringen, müssen Sie das Servo an die Stromversorgung anschließen und die Servowelle in die Mittelposition drehen, damit sich der Kipphebel, der im angegebenen Grad installiert ist, in der Mittelposition befindet.
 
-- Generally Raspberry Pi will auto run `webServer.py` when booting, when `webServer.py` will control all the ports connected to servos to send a signal of rotating to the central position. When assembling the servo, you can connect it to any servo port anytime. After connecting the servo to the port, the gears will rotate to the central position; assemble the rocker arm to the servo, disconnect the servo from the port, and insert more servos to repeat rocker arm assembly (all servos will be in the central position).  
+- Im Allgemeinen führt Raspberry Pi beim Booten automatisch `webServer.py` aus, wenn `webServer.py` alle mit Servos verbundenen Ports steuert, um ein Signal zum Drehen in die Mittelposition zu senden. Beim Zusammenbau des Servos können Sie es jederzeit an einen beliebigen Servoanschluss anschließen. Nach dem Anschließen des Servos an den Port drehen sich die Zahnräder in die Mittelposition; Montieren Sie den Kipphebel am Servo, trennen Sie das Servo vom Anschluss und setzen Sie weitere Servos ein, um die Kipphebelmontage zu wiederholen (alle Servos befinden sich in der Mittelposition).
 
-- When the servo is connected to power, try moving the rocker arm. If it can't be moved, it indicates the program for the servo works; otherwise there's error for the servo program. Run the line `[RobotName]/initPosServos.py` (replace `[RobotName]` with the folder name of your robot's program) to make the servo rotate to the central position.  
+- Wenn das Servo an die Stromversorgung angeschlossen ist, versuchen Sie, den Kipphebel zu bewegen. Wenn es nicht bewegt werden kann, zeigt es das Programm für die Servos an; andernfalls gibt es einen Fehler für das Servoprogramm. Führen Sie die Zeile `[RobotName]/initPosServos.py` aus (ersetzen Sie `[RobotName]` durch den Ordnernamen Ihres Roboterprogramms), um das Servo in die Mittelposition zu drehen.
 
-- When booting (it may take 30-50s), it takes a while for the Raspberry Pi to control PCA9685 to set signal of all servo ports for central position rotating. 
+- Beim Booten (es kann 30-50s dauern) dauert es eine Weile, bis der Raspberry Pi PCA9685 steuert, um das Signal aller Servoports für die Mittelpositionsdrehung einzustellen.
 
-## 5. Controlling Robot via WEB App
+## 5. Roboter über die WEB-App steuern
 
-- The WEB app is developed for common users to control the robot in an easier way. It's convenient to use WEB app; you may use it to wirelessly control the robot on any device with a web browser (Google Chrome was used for testing).  
+- Die WEB-App wurde für normale Benutzer entwickelt, um den Roboter einfacher zu steuern. Es ist bequem, die WEB-App zu verwenden; Sie können damit den Roboter auf jedem Gerät mit einem Webbrowser drahtlos steuern (zum Testen wurde Google Chrome verwendet).
 
-- Generally Raspberry Pi will auto run `webServer.py` when booting and establish a web server in the LAN. You may then use any other computer, mobile or tablet in the same LAN to visit the webpage and control the robot.
+- Im Allgemeinen führt Raspberry Pi beim Booten automatisch `webServer.py` aus und baut einen Webserver im LAN auf. Sie können dann jeden anderen Computer, Handy oder Tablet im selben LAN verwenden, um die Webseite zu besuchen und den Roboter zu steuern.
 
-- How to tell whether the robot has run the `webServer.py` or not: If the WS2812-LED lights up with the breathing effect, it means the robot has booted and runs the program automatically.    
+- So erkennen Sie, ob der Roboter `webServer.py` ausgeführt hat oder nicht: Wenn die WS2812-LED mit dem Atemeffekt aufleuchtet, bedeutet dies, dass der Roboter gestartet wurde und das Programm automatisch ausführt.
 
 - If the program is not run when the robot is booted, try to connect Raspberry Pi via SSH, manually run `webServer.py` with code and check the errors. Refer to the **Q&A** below or email us for help (before manually running `webServer.py`, you need to end the program possibly auto run in the backend to release resources. 
 
@@ -408,7 +408,7 @@ There are many ways to connect WiFi for Raspberry Pi. Two methods are provided i
     - <kbd>COLOR</kbd>: Switch between white and black line following. By default the robot follows white lines; click the button to switch to black line following.
     - The line following function analyzes two pixels in parallel and utilizes the information detected; the positions of these two pixels are `L1` and `L2`.
     - `SP` is the threshold of the turning command based on the visual analysis results. A bigger `SP` value means a big deviation; though a particularly small `SP` value may stop the robot from moving as it can't aim the target and find the direction. 
-    - When the visual line following function is enabled, the video screen will automatically become binarized results, making the visual analysis clearer.  
+    - When the visual line following function is enabled, the video screen will automatically become binarized results, making the visual analysis clearer.  
 
 - `Hard Ware` window displays CPU temperature, CPU occupancy rate, and memory usage of the Raspberry Pi.  
 
