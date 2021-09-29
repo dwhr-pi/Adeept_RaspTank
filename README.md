@@ -433,4 +433,61 @@ Es gibt viele Möglichkeiten, WLAN für Raspberry Pi zu verbinden. In dieser Dok
 
     > Weitere Methoden zum Abrufen der IP-Adresse des Raspberry Pi finden Sie in der offiziellen Dokumentation [IP-Adresse](https://www.raspberrypi.org/documentation/remote-access/ip-address.md)
 
-- Fehler treten mit `permissi . auf
+- Fehler treten mit der Eingabeaufforderung "Berechtigung verweigert" auf, wenn ich "server.py" oder "webServer.py" manuell ausführe.
+
+    > Der Raspberry Pi benötigt die Root-Berechtigung, um die abhängigen Bibliotheken für die WS2812 LED-Lichtsteuerung auszuführen.
+    > Sie müssen `sudo` am Anfang von `server.py` oder `webServer.py` hinzufügen, um das Programm auszuführen.
+    > sudo python3 [PFAD]/server.py
+    > sudo python3 [PFAD]/webServer.py
+
+- Ich kann den Hotspot für den Roboter nicht erstellen.
+
+    > Sie müssen das Open-Source-Projekt create_ap verwenden, um den Hotspot des Roboters einzurichten. Trennen Sie vor der Verwendung das WLAN-Netzwerk, aber schalten Sie das WLAN-Modul NICHT aus, sonst zeigt create_ap einen Fehler an, dass die Hardware blockiert ist.
+
+- Der Servo dreht sich ungewöhnlich stark.
+
+    > Vor dem Zusammenbau von Kipphebel und Servo müssen Sie die Servozahnräder in die mittlere Position ihres Drehbereichs drehen lassen. Montieren Sie dann den Kipphebel gemäß dem in der Dokumentation angegebenen Winkel. Aufgrund des Aufbaus des Servos (Zähnezahl 20 bei den Servozahnrädern) kann es zu einer Abweichung von weniger als 9° kommen. Für eine bessere Leistung können Sie die Servosteuerungsdokumentation für die anfängliche Gradeinstellung nach Code lesen.
+
+- Das Servo wackelt.
+
+    > Wahrscheinlich ist das Servo-Untersetzungsgetriebe defekt.
+
+- Raspberry Pi kann nicht booten.
+
+    > Entfernen Sie alle Teile auf der Treiberplatine. Nur das Board an Raspberry Pi und Stromversorgung anschließen, neu starten.
+
+- "Remote-Seite unerwartet geschlossene Netzwerkverbindung" wird in einem Popup-Fenster angezeigt.
+
+    > Während der Installation kann es zu Fehlermeldungen kommen, da der Raspberry Pi nach der Installation automatisch neu gestartet wird, wodurch das Board getrennt wird.
+
+- Programm stürzt nach Doppelklick auf client.py oder GUI.py ab.
+
+    > Führen Sie das Skript mit `python client.py` oder `python GUI.py` in cmd aus und überprüfen Sie die Fehlerberichte.
+
+- Wie initialisiere ich den Winkel des Servos?
+
+    > Wenn Sie die Softwareinstallation auf dem Raspberry Pi abgeschlossen haben, booten Sie ihn einfach und das Servo wird initialisiert.
+
+- Ich kann über SSH eine Verbindung zum Raspberry Pi-Terminal herstellen \ Raspberry Pi konnte keine WLAN-Verbindung herstellen.
+
+    > Die Stromversorgungsmethoden haben keinen Einfluss auf die Steuerung durch SSH. Prüfen Sie, ob Sie die Datei `wpa_supplicant.conf` mehrmals erstellt haben. Wenn ja, verursacht dieses Problem SSH-Fehler.
+
+- Kann ich Robot HAT und Raspberry Pi über USB versorgen?
+
+    > Ein 2A-Ausgang wird für einen Raspberry Pi 3B benötigt, wenn mindestens 3A für einen Raspberry Pi 4 benötigt werden. Sie können die USB-Stromversorgung für Softwareinstallation und Test verwenden, aber sie ist nicht geeignet für Hochleistungsmodule wie Servo- oder Motoranpassungen wie dies kann zu einer niedrigen Spannung führen. Es wird empfohlen, hier eine Batterie zur Stromversorgung zu verwenden.
+
+- Nach der Installation zeigt der Roboter beim Booten keine Reaktion.
+
+    > Die Datei `server.py` oder `webServer.py` kann aus bestimmten Gründen nicht ausgeführt werden. Versuchen Sie, `server.py` oder `webServer.py` manuell auszuführen und prüfen Sie, ob eine Fehlermeldung angezeigt wird.
+
+- Das Servo kehrt beim Anschluss an die Treiberplatine nicht in die Mittelstellung zurück.
+
+    > Im Allgemeinen führt der Raspberry Pi beim Booten automatisch `webServer.py` aus und `webServer.py` wird laufen und die Servo-Ports steuern, um ein Signal zum Drehen in die Mittelposition zu senden. Beim Zusammenbau des Servos können Sie es jederzeit an einen beliebigen Servoanschluss anschließen. Nach dem Anschließen des Servos an den Port drehen sich die Zahnräder in die Mittelposition; Montieren Sie den Kipphebel am Servo, trennen Sie das Servo vom Anschluss und setzen Sie weitere Servos ein, um die Kipphebelmontage zu wiederholen (alle Servos befinden sich in der Mittelposition).
+
+    > Wenn das Servo eingeschaltet ist, versuchen Sie, den Kipphebel zu bewegen. Wenn es nicht bewegt werden kann, zeigt es das Programm für die Servos an; andernfalls gibt es einen Fehler für das Servoprogramm. Führen Sie die Zeile `[RobotName]/initPosServos.py` aus (ersetzen Sie `[RobotName]` durch den Ordnernamen Ihres Roboterprogramms), um das Servo in die Mittelposition zu drehen.
+
+    > Beim Booten (es kann 30-50s dauern) dauert es eine Weile, bis der Raspberry Pi PCA9685 steuert, um das Signal aller Servoports für die Mittelpositionsdrehung zu setzen.
+
+- Der Fehler "no cv2" tritt auf, wenn ich `server.py` oder `webServer.py` manuell ausführe.
+
+    > OpenCV ist nicht richtig installiert. Geben Sie den Befehl sudo pip3 install opencv-contrib-python in den Raspberry Pi ein, um OpenCV manuell zu installieren.
