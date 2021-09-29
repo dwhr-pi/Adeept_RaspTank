@@ -221,14 +221,14 @@ There are many ways to connect WiFi for Raspberry Pi. Two methods are provided i
     }
     ```
 
-    4. TYpe in your own information for `Insert country code here`, `Name of your WiFi`, and `Password for your WiFi`. Pay attention to the capitalization. Refer to the example below:   
+    4. Type in your own information for `Insert country code here`, `Name of your WiFi`, and `Password for your WiFi`. Pay attention to the capitalization. Refer to the example below:   
 
     ```
     ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
     update_config=1
-    country=US
-    network={
-     ssid="MyName"
+    Land=USA
+    Netzwerk={
+     ssid="MeinName"
      psk="12345678"
     }
     ```

@@ -16,10 +16,10 @@ https://www.amazon.de/dp/B085C6Q48P/?coliid=I1DJTAL1BCJCF3&colid=Z0TLSKL78W9I&ps
 *Angetrieben von 2x18650 Batterien (NICHT im Lieferumfang enthalten). Sie müssen Ihre eigenen Batterien vorbereiten. Raspberry Pi ist NICHT enthalten.
 
 
-##Produktbeschreibungen
+###Produktbeschreibungen
 Der RaspTank ist eine mobile Crawler-Roboterplattform, die auf Raspberry Pi basiert. Er ist mit einem 4-DOF-Roboterarm ausgestattet, der kleine Objekte greifen kann. RaspTank wurde für Anfänger und Profis entwickelt, um KI, Robotik, Programmierung und Elektronik zu lernen. Wir haben ein detailliertes und illustriertes Handbuch geschrieben, mit dem Sie die Montage des Roboters schnell abschließen können.
 
-##RaspTank weist die folgenden Eigenschaften auf:
+###RaspTank weist die folgenden Eigenschaften auf:
 1.Ausgestattet mit einem 4-DOF Roboterarm.
 2.Objekterkennung, -verfolgung, Bewegungserkennung: basierend auf openCV, kann Objekte einer bestimmten Form oder Farbe verfolgen.
 3.Linienverfolgung: basierend auf Infrarotreflexion kann er entlang der Route gehen, die Sie haben set.
@@ -27,15 +27,15 @@ Der RaspTank ist eine mobile Crawler-Roboterplattform, die auf Raspberry Pi basi
 5.Von der APP ferngesteuert: Sie können den Roboter über die fernsteuern Tasten auf der Tastatur oder die virtuellen Tasten auf der GUI.
 6.Ausgestattet mit 12 seriellen WS8212-RGB-LEDs können diese RGB-LEDs über nur einen GPIO-Pin gesteuert werden, der eine Vielzahl von Farben ändern und den Arbeitszustand von anzeigen kann der Roboter.
 
-##Videos:
+###Videos:
 https://www.adeept.com/video/detail-46.html
 https://www.adeept.com/video/detail-47.html
 https://www.adeept.com/video/detail-53.html
 
-##Tutorials herunterladen:
+###Tutorials herunterladen:
 https: //www.adeept. com/learn/detail-34.html
 
-##Paketliste:
+###Paketliste:
 1 Set Acrylplatten
 1x Adeept Motor HAT V2.0
 1x Raspberry Pi Camera(mit Kabel)

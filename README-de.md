@@ -1,26 +1,27 @@
 [Robotername]: Adeept_Rasptank
-[RobotURL]: https://github.com/adeept/adeept_rasptank
-[RobotGit]: https://github.com/adeept/adeept_rasptank.git
-[Offizielle Raspberry Pi-Website]: https://www.raspberrypi.org/downloads/
-[Image-Datei für den Raspberry Pi Robot]: https://adeept-my.sharepoint.com/personal/tomsun_adeept_onmicrosoft_com/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Ftomsun%5Fadeept%5Fonmicrosoft%5Fcom%2FDocuments%2FadeeptRaspTank&amp ; originalPath = aHR0cHM6Ly9hZGVlcHQtbXkuc2hhcmVwb2ludC5jb20vOmY6L2cvcGVyc29uYWwvdG9tc3VuX2FkZWVwdF9vbm1pY3Jvc29mdF9jb20vRXZCZmhES1dJVEJLb1ZLejFJTThta01CaWc5SHRiZG9sMXdLQU83WTk5cFJWdz9ydGltZT1rUWxJeE9EMjEwZw
-[Offizielle Website]: https://www.adeept.com/
-[GitHub]: https://github.com/adeept/adeept_rasptank/
-[Dokumentation zur Strukturmontage]: https://www.adeept.com/learn/
+[RobotURL]:https://github.com/adeept/adeept_rasptank
+[RobotGit]:https://github.com/adeept/adeept_rasptank.git
+[Offizielle Raspberry Pi-Website]:https://www.raspberrypi.org/downloads/
+[Image-Datei für den Raspberry Pi Robot]:https://adeept-my.sharepoint.com/personal/tomsun_adeept_onmicrosoft_com/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Ftomsun%5Fadeept%5Fonmicrosoft%5Fcom%2FDocuments%2FadeeptRaspTank&amp ; originalPath = aHR0cHM6Ly9hZGVlcHQtbXkuc2hhcmVwb2ludC5jb20vOmY6L2cvcGVyc29uYWwvdG9tc3VuX2FkZWVwdF9vbm1pY3Jvc29mdF9jb20vRXZCZmhES1dJVEJLb1ZLejFJTThta01CaWc5SHRiZG9sMXdLQU83WTk5cFJWdz9ydGltZT1rUWxJeE9EMjEwZw
+[Offizielle Website]:https://www.adeept.com/
+[GitHub]:https://github.com/adeept/adeept_rasptank/
+[Dokumentation zur Strukturmontage]:https://www.adeept.com/learn/
+
 Erste Schritte mit Raspberry Pi Robot und Python
 ----
 * [Erste Schritte mit Raspberry Pi Robot und Python](#getting-started-with-raspberry-pi-robot-and-python)
     * [1. Prämisse](#1-Prämisse)
-       * [1.1 STEAM und Raspberry Pi] (#11-steam-and-raspberry-pi)
+       * [1.1 STEAM und Raspberry Pi](#11-steam-and-raspberry-pi)
        * [1.2 Über die Dokumentation](#12-über-die-dokumentation)
     * [2. Erste Schritte mit dem Raspberry Pi](#2-Getting-to-use-the-raspberry-pi)
        * [2.1 Das Raspberry Pi-Image auf eine SD-Karte schreiben](#21-write-the-raspberry-pi-image-to-an-sd-card)
           * [2.1.1 Methode A: 'Raspbian' mit Raspberry Pi Imager auf die SD-Karte schreiben](#211-method-a-write-raspbian-to-the-sd-card-by-raspberry-pi-imager)
-          * [2.1.2 Methode B: Laden Sie die Image-Datei Raspbian herunter und schreiben Sie sie manuell auf die SD-Karte](#212-method-b-download-the-image-file-raspbian-and-write-it-to-the- SD-Karte-manuell)
-          * [2.1.3 Methode C: Laden Sie die von uns bereitgestellte Bilddatei manuell herunter und schreiben Sie sie auf die SD-Karte (nicht empfohlen)](#213-method-c-manually-download-the-image-file-provided-by- uns-und-schreiben-es-auf-die-sd-karte-nicht-empfohlen)
+          * [2.1.2 Methode B: Laden Sie die Image-Datei Raspbian herunter und schreiben Sie sie manuell auf die SD-Karte](#212-method-b-download-the-image-file-raspbian-and-write-it-to-the-SD-Karte-manuell)
+          * [2.1.3 Methode C: Laden Sie die von uns bereitgestellte Bilddatei manuell herunter und schreiben Sie sie auf die SD-Karte (nicht empfohlen)](#213-method-c-manually-download-the-image-file-provided-by-uns-und-schreiben-es-auf-die-sd-karte-nicht-empfohlen)
        * [2.2 SSH-Server von Raspberry Pi aktivieren](#22-enable-ssh-server-of-raspberry-pi)
           * [2.2.1 Methode A: SSH mit Peripheriegeräten aktivieren](#221-method-a-enable-ssh-with-peripherals)
           * [2.2.2 Methode A: SSH ohne Peripheriegeräte aktivieren](#222-method-a-enable-ssh-ohne-peripheriegeräte)
-       * [2.3 WLAN auf Raspberry Pi konfigurieren] (#23-configure-wifi-on-raspberry-pi)
+       * [2.3 WLAN auf Raspberry Pi konfigurieren](#23-configure-wifi-on-raspberry-pi)
           * [2.3.1 Methode A: WiFi-Verbindung mit Peripheriegeräten](#231-Methode-eine-WLAN-Verbindung-mit-Peripheriegeräten)
           * [2.3.2 Methode A: WiFi-Verbindung ohne Peripheriegeräte](#232-Methode-eine-WLAN-Verbindung-ohne-Peripheriegeräte)
     * [3. Softwareinstallation &amp; Betrieb auf Raspberry Pi](#3-software-installation--operation-on-raspberry-pi)
@@ -29,7 +30,7 @@ Erste Schritte mit Raspberry Pi Robot und Python
        * [3.3 Einloggen in Raspberry Pi (Windows)](#33-log-in-raspberry-pi-windows)
        * [3.4 Download-Programm des Raspberry Pi-Roboters](#34-download-program-of-the-raspberry-pi-robot)
        * [3.5 Entsprechende abhängige Bibliotheken installieren](#35-installieren-entsprechende-abhängige-Bibliotheken)
-       * [3.6 Führen Sie das Programm des Raspberry Pi Robots aus] (#36-run-the-raspberry-pi-robots-program)
+       * [3.6 Führen Sie das Programm des Raspberry Pi Robots aus](#36-run-the-raspberry-pi-robots-program)
     * [4. Vorsichtsmaßnahmen für die Strukturmontage](#4-Vorsichtsmaßnahmen-für-Strukturmontage)
           * [4.1 Dokumentation zur Strukturmontage](#41-Dokumentation-für-Strukturmontage)
           * [4.2 Vorsichtsmaßnahmen für die Strukturmontage](#42-Vorsichtsmaßnahmen-für-Strukturmontage)
@@ -61,16 +62,16 @@ Diese Dokumentation ist eine Softwareinstallations- und Bedienungsanleitung für
 
 1. Bereiten Sie eine SD-Karte (16 GB oder größer) und einen SD-Kartenleser vor
 2. Laden Sie den `Raspberry Pi Imager` von der offiziellen Website [Offizielle Raspberry Pi-Website] (https://www.raspberrypi.org/downloads/) herunter.
-    - [Raspberry Pi Imager für Windows](https://downloads.raspberrypi.org/imager/imager.exe "Klicken Sie hier, um Raspberry Pi Imager für Windows herunterzuladen)
-    - [Raspberry Pi Imager für macOS](https://downloads.raspberrypi.org/imager/imager.dmg "Klicken Sie hier, um Raspberry Pi Imager für macOS herunterzuladen")
-    - [Raspberry Pi Imager für Ubuntu](https://downloads.raspberrypi.org/imager/imager_amd64.deb "Klicken Sie hier, um Raspberry Pi Imager für Ubuntu herunterzuladen")
+    - [Raspberry Pi Imager für Windows](https://downloads.raspberrypi.org/imager/imager.exe) "Klicken Sie hier, um Raspberry Pi Imager für Windows herunterzuladen."
+    - [Raspberry Pi Imager für macOS](https://downloads.raspberrypi.org/imager/imager.dmg) "Klicken Sie hier, um Raspberry Pi Imager für macOS herunterzuladen." 
+    - [Raspberry Pi Imager für Ubuntu](https://downloads.raspberrypi.org/imager/imager_amd64.deb) "Klicken Sie hier, um Raspberry Pi Imager für Ubuntu herunterzuladen."
 3. Installieren Sie den `Raspberry Pi Imager`
 4. Schreiben Sie das Betriebssystem für Raspberry Pi auf die SD-Karte mit `Raspberry Pi Imager` `Raspbian Full - Eine Portierung von Debian mit Desktop und empfohlener Anwendung`
 5. Lassen Sie die SD-Karte angeschlossen, nachdem der Schreibvorgang abgeschlossen ist. Wir verwenden sie später zum Konfigurieren der SSH- und WLAN-Verbindung.
 
 **Detaillierte Schritte:**
 
-- Öffnen Sie einen Webbrowser auf Ihrem Computer, gehen Sie zur Raspberry Pi-Website [Offizielle Raspberry Pi-Website] (https://www.raspberrypi.org/downloads/), suchen Sie den "Raspberry Pi Imager" für Ihr Computer-Betriebssystem und laden Sie ihn herunter. oder klicken Sie auf die obigen Links für das entsprechende System, um es direkt herunterzuladen und zu installieren.
+- Öffnen Sie einen Webbrowser auf Ihrem Computer, gehen Sie zur Raspberry Pi-Website [Offizielle Raspberry Pi-Website](https://www.raspberrypi.org/downloads/), suchen Sie den "Raspberry Pi Imager" für Ihr Computer-Betriebssystem und laden Sie ihn herunter. oder klicken Sie auf die obigen Links für das entsprechende System, um es direkt herunterzuladen und zu installieren.
 
   ![imagerDownload](images/imagerDownload.png)
 
@@ -93,15 +94,15 @@ Da die Image-Datei mit dem `Raspberry Pi Imager` in **2.1.1** heruntergeladen wi
 **Schritt-für-Schritt-Übersicht**
 
 1. Bereiten Sie eine SD-Karte (16 GB oder größer) und einen SD-Kartenleser vor
-2. Laden Sie den `Raspberry Pi Imager` von der offiziellen Website [Offizielle Raspberry Pi-Website] (https://www.raspberrypi.org/downloads/) herunter.
-    - [Raspberry Pi Imager für Windows](https://downloads.raspberrypi.org/imager/imager.exe "Klicken Sie hier, um Raspberry Pi Imager für Windows herunterzuladen)
-    - [Raspberry Pi Imager für macOS](https://downloads.raspberrypi.org/imager/imager.dmg "Klicken Sie hier, um Raspberry Pi Imager für macOS herunterzuladen")
-    - [Raspberry Pi Imager für Ubuntu](https://downloads.raspberrypi.org/imager/imager_amd64.deb "Klicken Sie hier, um Raspberry Pi Imager für Ubuntu herunterzuladen")
+2. Laden Sie den `Raspberry Pi Imager` von der offiziellen Website [Offizielle Raspberry Pi-Website](https://www.raspberrypi.org/downloads/) herunter.
+    - [Raspberry Pi Imager für Windows](https://downloads.raspberrypi.org/imager/imager.exe) "Klicken Sie hier, um Raspberry Pi Imager für Windows herunterzuladen."
+    - [Raspberry Pi Imager für macOS](https://downloads.raspberrypi.org/imager/imager.dmg) "Klicken Sie hier, um Raspberry Pi Imager für macOS herunterzuladen."
+    - [Raspberry Pi Imager für Ubuntu](https://downloads.raspberrypi.org/imager/imager_amd64.deb) "Klicken Sie hier, um Raspberry Pi Imager für Ubuntu herunterzuladen."
 3. Installieren Sie den `Raspberry Pi Imager`
 4. Laden Sie die Bilddatei `Raspbian` . herunter
     - Torrent-Datei:
-    [Raspbian - Raspbian Buster mit Desktop und empfohlener Software](https://downloads.raspberrypi.org/raspbian_full_latest.torrent "Link zum Download der Torrent-Datei für Bild")
-    - Zip-Datei: [Raspbian - Raspbian Buster mit Desktop und empfohlener Software](https://downloads.raspberrypi.org/raspbian_full_latest "Link zum Download der Zip-Datei für das Bild")
+    [Raspbian - Raspbian Buster mit Desktop und empfohlener Software](https://downloads.raspberrypi.org/raspbian_full_latest.torrent) "Link zum Download der Torrent-Datei für Bild."
+    - Zip-Datei: [Raspbian - Raspbian Buster mit Desktop und empfohlener Software](https://downloads.raspberrypi.org/raspbian_full_latest) "Link zum Download der Zip-Datei für das Bild."
 5. Entpacken Sie die Datei, beachten Sie, dass der Pfad für die extrahierte `.img`-Datei in Englisch sein sollte, keine Sonderzeichen erlaubt.
 6. Schreiben Sie die auf die SD-Karte heruntergeladene Bilddatei `Raspbian` mit `Raspberry Pi Imager`
 7. Lassen Sie die SD-Karte angeschlossen, nachdem der Schreibvorgang abgeschlossen ist. Wir verwenden sie später zum Konfigurieren der SSH- und WLAN-Verbindung.
@@ -112,7 +113,7 @@ Da die Image-Datei mit dem `Raspberry Pi Imager` in **2.1.1** heruntergeladen wi
 
   ![imagerDownload](images/imagerDownload.png)
 
-- Wählen Sie auf der Raspberry Pi-Website [Offizielle Raspberry Pi-Website] (https://www.raspberrypi.org/downloads/ ) über `Downloads` -> `Raspbian` -> `Raspbian Buster mit Desktop und empfohlener Software` und Klicken Sie zum Herunterladen auf die Torrent- oder ZIP-Datei. Entpacken Sie die Datei nach dem Download, beachten Sie, dass der Pfad für die extrahierte `.img`-Datei in Englisch sein sollte, keine Sonderzeichen erlaubt; andernfalls öffnet `Raspberry Pi Imager` die `.img`-Datei möglicherweise nicht. Es wird empfohlen, die Datei `.img` im Stammverzeichnis der Festplatte `C:\` oder `D:\` zu speichern, **aber `.img` nicht auf der SD-Karte zu speichern**.
+- Wählen Sie auf der Raspberry Pi-Website [Offizielle Raspberry Pi-Website](https://www.raspberrypi.org/downloads/ ) über `Downloads` -> `Raspbian` -> `Raspbian Buster mit Desktop und empfohlener Software` und Klicken Sie zum Herunterladen auf die Torrent- oder ZIP-Datei. Entpacken Sie die Datei nach dem Download, beachten Sie, dass der Pfad für die extrahierte `.img`-Datei in Englisch sein sollte, keine Sonderzeichen erlaubt; andernfalls öffnet `Raspberry Pi Imager` die `.img`-Datei möglicherweise nicht. Es wird empfohlen, die Datei `.img` im Stammverzeichnis der Festplatte `C:\` oder `D:\` zu speichern, **aber `.img` nicht auf der SD-Karte zu speichern**.
 
   ![RPiDownload](images/RPiDownload.png)
 
@@ -134,23 +135,23 @@ Die in **2.1.1** und **2.1.2** heruntergeladene Raspbian-Image-Datei ist die off
 
 1. Bereiten Sie eine SD-Karte (16 GB oder größer) und einen SD-Kartenleser vor
 2. Laden Sie den `Raspberry Pi Imager` von der offiziellen Website [Offizielle Raspberry Pi-Website] (https://www.raspberrypi.org/downloads/) herunter.
-    - [Raspberry Pi Imager für Windows](https://downloads.raspberrypi.org/imager/imager.exe "Klicken Sie hier, um Raspberry Pi Imager für Windows herunterzuladen")
-    - [Raspberry Pi Imager für macOS](https://downloads.raspberrypi.org/imager/imager.dmg "Klicken Sie hier, um Raspberry Pi Imager für macOS herunterzuladen")
-    - [Raspberry Pi Imager für Ubuntu](https://downloads.raspberrypi.org/imager/imager_amd64.deb "Klicken Sie hier, um Raspberry Pi Imager für Ubuntu herunterzuladen")
+    - [Raspberry Pi Imager für Windows](https://downloads.raspberrypi.org/imager/imager.exe) "Klicken Sie hier, um Raspberry Pi Imager für Windows herunterzuladen."
+    - [Raspberry Pi Imager für macOS](https://downloads.raspberrypi.org/imager/imager.dmg) "Klicken Sie hier, um Raspberry Pi Imager für macOS herunterzuladen."
+    - [Raspberry Pi Imager für Ubuntu](https://downloads.raspberrypi.org/imager/imager_amd64.deb) "Klicken Sie hier, um Raspberry Pi Imager für Ubuntu herunterzuladen."
 3. Installieren Sie den `Raspberry Pi Imager`
 4. Laden Sie die Bilddatei `Raspbian` . herunter
-    - [Image-Datei für den Raspberry Pi-Roboter](https://adeept-my.sharepoint.com/personal/tomsun_adeept_onmicrosoft_com/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Ftomsun%5Fadeept%5Fonmicrosoft%5Fcom%2FDocuments% 2FadeeptRaspTank & originalPath = aHR0cHM6Ly9hZGVlcHQtbXkuc2hhcmVwb2ludC5jb20vOmY6L2cvcGVyc29uYWwvdG9tc3VuX2FkZWVwdF9vbm1pY3Jvc29mdF9jb20vRXZCZmhES1dJVEJLb1ZLejFJTThta01CaWc5SHRiZG9sMXdLQU83WTk5cFJWdz9ydGltZT1rUWxJeE9EMjEwZw)
+    - [Image-Datei für den Raspberry Pi-Roboter](https://adeept-my.sharepoint.com/personal/tomsun_adeept_onmicrosoft_com/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Ftomsun%5Fadeept%5Fonmicrosoft%5Fcom%2FDocuments%2FadeeptRaspTank&originalPath=aHR0cHM6Ly9hZGVlcHQtbXkuc2hhcmVwb2ludC5jb20vOmY6L2cvcGVyc29uYWwvdG9tc3VuX2FkZWVwdF9vbm1pY3Jvc29mdF9jb20vRXZCZmhES1dJVEJLb1ZLejFJTThta01CaWc5SHRiZG9sMXdLQU83WTk5cFJWdz9ydGltZT1rUWxJeE9EMjEwZw)
 5. Entpacken Sie die Datei, beachten Sie, dass der Pfad für die extrahierte `.img`-Datei in Englisch sein sollte, keine Sonderzeichen erlaubt.
 6. Schreiben Sie die auf die SD-Karte heruntergeladene Bilddatei `Raspbian` mit `Raspberry Pi Imager`
 7. Lassen Sie die SD-Karte angeschlossen, nachdem der Schreibvorgang abgeschlossen ist. Wir verwenden sie später zum Konfigurieren der SSH- und WLAN-Verbindung.
 
 **Detaillierte Schritte:**
 
-- Öffnen Sie einen Webbrowser auf Ihrem Computer, gehen Sie zur Raspberry Pi-Website [Offizielle Raspberry Pi-Website] (https://www.raspberrypi.org/downloads/), suchen Sie den "Raspberry Pi Imager" für Ihr Computer-Betriebssystem und laden Sie ihn herunter. oder klicken Sie auf die obigen Links für das entsprechende System, um es direkt herunterzuladen und zu installieren.
+- Öffnen Sie einen Webbrowser auf Ihrem Computer, gehen Sie zur Raspberry Pi-Website [Offizielle Raspberry Pi-Website](https://www.raspberrypi.org/downloads/), suchen Sie den "Raspberry Pi Imager" für Ihr Computer-Betriebssystem und laden Sie ihn herunter. oder klicken Sie auf die obigen Links für das entsprechende System, um es direkt herunterzuladen und zu installieren.
 
   ![imagerDownload](images/imagerDownload.png)
 
-- Gehen Sie zu unserer [offiziellen Website](https://www.adeept.com/ ), suchen Sie die Image-Datei und laden Sie sie herunter - [Image-Datei für den Raspberry Pi-Roboter](https://adeept-my.sharepoint.com/ persönlich / tomsun_adeept_onmicrosoft_com / _layouts / 15 / onedrive.aspx? id =% 2Fpersonal% 2Ftomsun% 5Fadeept% 5Fonmicrosoft% 5Fcom% 2FDocuments% 2FadeeptRaspTank & originalPath = aHR0cHM6Ly9hZGVlcHQtbXkuc2hhcmVwb2ludC5jb20vOmY6L2cvcGVyc29uYWwvdG9tc3VuX2FkZWVwdF9vbm1pY3Jvc29mdF9jb20vRXZCZmhES1dJVEJLb1ZLejFJTThta01CaWc5SHRiZG9sMXdLQU83WTk5cFJWdz9ydGltZT1rUWxJeE9EMjEwZw). Entpacken Sie die Datei, beachten Sie, dass der Pfad für die extrahierte `.img`-Datei in Englisch sein sollte, keine Sonderzeichen erlaubt. andernfalls öffnet `Raspberry Pi Imager` die `.img`-Datei möglicherweise nicht. Es wird empfohlen, die Datei `.img` im Stammverzeichnis der Festplatte `C:\` oder `D:\` zu speichern, **aber `.img` nicht auf der SD-Karte zu speichern**.
+- Gehen Sie zu unserer [offiziellen Website](https://www.adeept.com/), suchen Sie die Image-Datei und laden Sie sie herunter - [Image-Datei für den Raspberry Pi-Roboter](https://adeept-my.sharepoint.com/personal/tomsun_adeept_onmicrosoft_com/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Ftomsun%5Fadeept%5Fonmicrosoft%5Fcom%2FDocuments%2FadeeptRaspTank&originalPath=aHR0cHM6Ly9hZGVlcHQtbXkuc2hhcmVwb2ludC5jb20vOmY6L2cvcGVyc29uYWwvdG9tc3VuX2FkZWVwdF9vbm1pY3Jvc29mdF9jb20vRXZCZmhES1dJVEJLb1ZLejFJTThta01CaWc5SHRiZG9sMXdLQU83WTk5cFJWdz9ydGltZT1rUWxJeE9EMjEwZw). Entpacken Sie die Datei, beachten Sie, dass der Pfad für die extrahierte `.img`-Datei in Englisch sein sollte, keine Sonderzeichen erlaubt. andernfalls öffnet `Raspberry Pi Imager` die `.img`-Datei möglicherweise nicht. Es wird empfohlen, die Datei `.img` im Stammverzeichnis der Festplatte `C:\` oder `D:\` zu speichern, **aber `.img` nicht auf der SD-Karte zu speichern**.
 
 - Legen Sie die SD-Karte in den Kartenleser ein, verbinden Sie den Kartenleser und Ihren Computer.
 
@@ -214,11 +215,10 @@ Es gibt viele Möglichkeiten, WLAN für Raspberry Pi zu verbinden. In dieser Dok
     ```
     ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
     update_config=1
-    country=Geben Sie hier den Ländercode ein
-    Netzwerk={
-     ssid="Name Ihres WLANs"
-     psk="Passwort für Ihr WLAN"
-    }
+    country=Insert country code here
+    network={
+     ssid="Name of your WiFi"
+     psk="Password for your WiFi"
     ```
 
     4. Geben Sie Ihre eigenen Informationen für `Ländercode hier einfügen`, `Name Ihres WLANs` und `Passwort für Ihr WLAN` ein. Achten Sie auf die Groß-/Kleinschreibung. Siehe folgendes Beispiel:
@@ -253,11 +253,11 @@ Es gibt viele Möglichkeiten, WLAN für Raspberry Pi zu verbinden. In dieser Dok
 ### 3.1 Bei Raspberry Pi anmelden (Windows 10)
 - Für Windows 10 ist SSH in den Versionen nach Oktober 2018 eingebaut, Sie benötigen also keine Software von Drittanbietern.
 
-- Bei niedrigeren Versionen des Windows-Betriebssystems ist SSH nicht integriert, und Sie können sich in der offiziellen Dokumentation [SSH using Windows] (https://www.raspberrypi.org/documentation/remote-access/) beim Raspberry Pi anmelden. ssh/windows.md).
+- Bei niedrigeren Versionen des Windows-Betriebssystems ist SSH nicht integriert, und Sie können sich in der offiziellen Dokumentation [SSH using Windows](https://www.raspberrypi.org/documentation/remote-access/) beim Raspberry Pi anmelden. ssh/windows.md).
 
 - Bevor Sie den Raspberry Pi per SSH verbinden, müssen Sie die IP-Adresse des Raspberry Pi kennen. Überprüfen Sie die Verwaltungsoberfläche Ihres Routers oder laden Sie die App `Network Scanner` herunter -> suchen Sie nach einem Gerät namens `RASPBERRY` oder `Raspberry Pi Foundation`, um die IP-Adresse zu erhalten.
 
-- Weitere Methoden zum Abrufen der IP-Adresse des Raspberry Pi finden Sie in der offiziellen Dokumentation [IP-Adresse] (https://www.raspberrypi.org/documentation/remote-access/ip-address.md)
+- Weitere Methoden zum Abrufen der IP-Adresse des Raspberry Pi finden Sie in der offiziellen Dokumentation [IP-Adresse](https://www.raspberrypi.org/documentation/remote-access/ip-address.md)
 
 - Drücken Sie die Tasten <kbd>win</kbd>+<kbd>R</kbd>, geben Sie `cmd` ein und drücken Sie <kbd>Enter</kbd>.
 
@@ -298,7 +298,7 @@ Es gibt viele Möglichkeiten, WLAN für Raspberry Pi zu verbinden. In dieser Dok
 ### 3.3 Bei Raspberry Pi anmelden (Windows)
 - Für niedrigere Versionen des Windows-Betriebssystems ist SSH nicht integriert, und Sie können sich beim Raspberry Pi anmelden, indem Sie sich auf die offizielle Dokumentation Raspberry Pi [SSH using Windows] (https://www.raspberrypi.org/documentation/remote- access/ssh/windows.md).
 - Bevor Sie den Raspberry Pi per SSH verbinden, müssen Sie die IP-Adresse des Raspberry Pi kennen. Überprüfen Sie die Verwaltungsoberfläche Ihres Routers oder laden Sie die App `Network Scanner` herunter -> suchen Sie nach einem Gerät namens `RASPBERRY` oder `Raspberry Pi Foundation`, um die IP-Adresse zu erhalten.
-- Weitere Methoden zum Abrufen der IP-Adresse des Raspberry Pi finden Sie in der offiziellen Dokumentation [IP-Adresse] (https://www.raspberrypi.org/documentation/remote-access/ip-address.md)
+- Weitere Methoden zum Abrufen der IP-Adresse des Raspberry Pi finden Sie in der offiziellen Dokumentation [IP-Adresse](https://www.raspberrypi.org/documentation/remote-access/ip-address.md)
 - Möglicherweise müssen Sie die `PuTTY`-Version für Ihr Betriebssystem herunterladen und sich mit dem Tool bei Raspberry Pi anmelden. [Klicken Sie hier, um PuTTY herunterzuladen](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html)
 - Führen Sie `PuTTY` aus, geben Sie die IP-Adresse des Raspberry Pi als `Host Name` ein und klicken Sie auf <kbd>Öffnen</kbd>.
 - Wenn die Meldung `Network error: Connection timed out` erscheint, haben Sie möglicherweise eine falsche IP-Adresse eingegeben.
@@ -381,113 +381,56 @@ Es gibt viele Möglichkeiten, WLAN für Raspberry Pi zu verbinden. In dieser Dok
 
 - So erkennen Sie, ob der Roboter `webServer.py` ausgeführt hat oder nicht: Wenn die WS2812-LED mit dem Atemeffekt aufleuchtet, bedeutet dies, dass der Roboter gestartet wurde und das Programm automatisch ausführt.
 
-- If the program is not run when the robot is booted, try to connect Raspberry Pi via SSH, manually run `webServer.py` with code and check the errors. Refer to the **Q&A** below or email us for help (before manually running `webServer.py`, you need to end the program possibly auto run in the backend to release resources. 
+- Wenn das Programm beim Booten des Roboters nicht ausgeführt wird, versuchen Sie, den Raspberry Pi über SSH zu verbinden, führen Sie `webServer.py` manuell mit Code aus und überprüfen Sie die Fehler. Lesen Sie die **Q&A** unten oder senden Sie uns eine E-Mail, um Hilfe zu erhalten (bevor Sie `webServer.py` manuell ausführen, müssen Sie das Programm möglicherweise automatisch im Backend ausführen, um Ressourcen freizugeben.
 
-    > sudo killall python3  
+    > sudo killall python3
     > sudo python3 [RobotName]/server/webServer.py
 
-- If the `webServer.py` is auto run successfully, open a web browser (here Google Chrome), type in the IP address of the Raspberry Pi, with `:5000` added to the end, and go to the next step, as shown below:   
+- Wenn die `webServer.py` erfolgreich automatisch ausgeführt wird, öffnen Sie einen Webbrowser (hier Google Chrome), geben Sie die IP-Adresse des Raspberry Pi ein, mit `:5000` am Ende, und gehen Sie zum nächsten Schritt, Wie nachfolgend dargestellt:
 
-    > 192.168.3.161:5000  
+    > 192.168.3.161:5000
 
-- If no image is displayed, try manual running `webServer.py` as described in the step above.  
+- Wenn kein Bild angezeigt wird, versuchen Sie, `webServer.py` manuell auszuführen, wie im obigen Schritt beschrieben.
 
-- If image is shown, you can control the robot to move now. You may check the description for keyboard shortcuts `Instruction` at the bottom and control the robot based on its general functions with the keyboard.   
+- Wenn ein Bild angezeigt wird, können Sie den Roboter jetzt so steuern, dass er sich bewegt. Sie können die Beschreibung der Tastenkombinationen 'Anweisung' unten überprüfen und den Roboter anhand seiner allgemeinen Funktionen mit der Tastatur steuern.
 
-- `Video` window shows the image captured by the robot's camera in real time.  
+- Das `Video`-Fenster zeigt das von der Roboterkamera aufgenommene Bild in Echtzeit.
 
-- `Move Control` window is to control the basic movements of the robot.   
+- Das Fenster "Move Control" dient zur Steuerung der Grundbewegungen des Roboters.
 
-- `Arm Control` window controls the servo movement. 
-    - <kbd>GRAB</kbd>   <kbd>LOOSE</kbd>: Control the claws of the robotic arm to open and close
-    - <kbd>HANDUP</kbd> <kbd>HANDDOWN</kbd>: Control the robotic arm to move up and down 
-    - <kbd>LEFT</kbd>   <kbd>RIGHT</kbd>: Control the claws rotation of the robotic arm 
+- Das Fenster "Arm Control" steuert die Servobewegung.
+    - <kbd>GRAB</kbd> <kbd>LOOSE</kbd>: Steuern Sie die Klauen des Roboterarms zum Öffnen und Schließen
+    - <kbd>HANDUP</kbd> <kbd>HANDDOWN</kbd>: Steuern Sie den Roboterarm, um sich nach oben und unten zu bewegen
+    - <kbd>LEFT</kbd> <kbd>RIGHT</kbd>: Steuern Sie die Klauendrehung des Roboterarms
 
-- `CVFL Control` window is to control the visual line following function of the robot. Here only an overview for the function is described; more details will be provided in the OpenCV section: 
-    - <kbd>START</kbd>: Enable or disable the visual line following function. 
-    - <kbd>COLOR</kbd>: Switch between white and black line following. By default the robot follows white lines; click the button to switch to black line following.
-    - The line following function analyzes two pixels in parallel and utilizes the information detected; the positions of these two pixels are `L1` and `L2`.
-    - `SP` is the threshold of the turning command based on the visual analysis results. A bigger `SP` value means a big deviation; though a particularly small `SP` value may stop the robot from moving as it can't aim the target and find the direction. 
-    - When the visual line following function is enabled, the video screen will automatically become binarized results, making the visual analysis clearer.  
+- Das Fenster "CVFL-Steuerung" dient zur Steuerung der Sichtlinienverfolgungsfunktion des Roboters. Hier wird nur eine Übersicht zur Funktion beschrieben; Weitere Details finden Sie im Abschnitt OpenCV:
+    - <kbd>START</kbd>: Aktiviert oder deaktiviert die visuelle Linienverfolgungsfunktion.
+    - <kbd>COLOR</kbd>: Umschalten zwischen weißer und schwarzer Linienführung. Standardmäßig folgt der Roboter weißen Linien; Klicken Sie auf die Schaltfläche, um zur schwarzen Linie zu wechseln.
+    - Die Zeilenfolgefunktion analysiert zwei Pixel parallel und verwendet die erkannten Informationen; die Positionen dieser beiden Pixel sind "L1" und "L2".
+    - `SP` ist die Schwelle des Abbiegebefehls basierend auf den Ergebnissen der visuellen Analyse. Ein größerer "SP"-Wert bedeutet eine große Abweichung; obwohl ein besonders kleiner `SP`-Wert den Roboter an der Bewegung hindern kann, da er das Ziel nicht anvisieren und die Richtung finden kann.
+    - Wenn die visuelle Linienverfolgungsfunktion aktiviert ist, wird der Videobildschirm automatisch zu binarisierten Ergebnissen, wodurch die visuelle Analyse klarer wird.
 
-- `Hard Ware` window displays CPU temperature, CPU occupancy rate, and memory usage of the Raspberry Pi.  
+- Das Fenster "Hardware" zeigt die CPU-Temperatur, die CPU-Auslastung und die Speichernutzung des Raspberry Pi an.
 
-- `Actions`window control unique functions of the robot: 
-    - <kbd>MOTION GET</kbd>: Motion detection function based on OpenCV. When objects move in the view of the camera, the program will circle the part in the `Video` window, and the LED light on the robot will show respective changes. 
-    - <kbd>AUTO MATIC</kbd>: Obstacle avoidance function based on ultrasonic. When the ultrasonic module on the robot detects an obstacle, it will automatically turn left, and take a step backward before turning if it's too close to the obstacle. 
-    - <kbd>POLICE LIGHT</kbd>: WS2812-LED light control based on multithreading. It makes the WS2812-LED light on the robot blink red and blue alternately.
-    - <kbd>TRACK LINE</kbd>: Line tracking function by using the 3-channel infrared module. By default it tracks black lines on a white surface (a white background that reflects infrared, and 1-cm wide black lines that do not reflects infrared). Performance of the line tracking varies from surface and line materials as well as the height of the robot chassis; you may need a cross screwdriver to adjust the potentiometer on the line tracking module.  
+- `Aktionen`-Fenster steuert einzigartige Funktionen des Roboters:
+    - <kbd>MOTION GET</kbd>: Bewegungserkennungsfunktion basierend auf OpenCV. Wenn sich Objekte im Blickfeld der Kamera bewegen, umkreist das Programm das Teil im 'Video'-Fenster und das LED-Licht am Roboter zeigt die entsprechenden Änderungen an.
+    - <kbd>AUTO MATIC</kbd>: Hindernisvermeidungsfunktion basierend auf Ultraschall. Wenn das Ultraschallmodul des Roboters ein Hindernis erkennt, biegt er automatisch nach links ab und macht einen Schritt zurück, bevor er sich dreht, wenn er sich zu nahe am Hindernis befindet.
+    - <kbd>POLICE LIGHT</kbd>: WS2812-LED Lichtsteuerung basierend auf Multithreading. Dadurch blinkt das WS2812-LED-Licht am Roboter abwechselnd rot und blau.
+    - <kbd>TRACK LINE</kbd>: Linienverfolgungsfunktion durch Verwendung des 3-Kanal-Infrarotmoduls. Standardmäßig verfolgt es schwarze Linien auf einer weißen Oberfläche (einem weißen Hintergrund, der Infrarot reflektiert, und 1 cm breite schwarze Linien, die kein Infrarot reflektieren). Die Leistung der Linienverfolgung variiert von Oberflächen- und Linienmaterialien sowie der Höhe des Roboterchassis; Möglicherweise benötigen Sie einen Kreuzschraubendreher, um das Potentiometer am Linienverfolgungsmodul einzustellen.
 
-- `FC Control` window controls the color lock function of the robot:
-    - <kbd>START</kbd>: Enable or disable color searching and tracking function.
-    - <kbd>COLOR</kbd>: Select the color to track.
-    - When the function is on, the robot will automatically lock one particular color in the camera view. By default it tracks bright yellow objects. You can change the color as you want. When an object is locked, the LED on the robot will turn orange. As the robot's head can only move up and down, the program does not involve tracking colors horizontally. If you have interest in this part, you may add the motor control based on the openCV section to realize effect.   
+- Das Fenster "FC Control" steuert die Farbsperrfunktion des Roboters:
+    - <kbd>START</kbd>: Aktivieren oder deaktivieren Sie die Farbsuch- und -verfolgungsfunktion.
+    - <kbd>COLOR</kbd>: Wählen Sie die zu verfolgende Farbe.
+    - Wenn die Funktion aktiviert ist, sperrt der Roboter automatisch eine bestimmte Farbe in der Kameraansicht. Standardmäßig verfolgt es leuchtend gelbe Objekte. Sie können die Farbe nach Belieben ändern. Wenn ein Objekt gesperrt ist, leuchtet die LED am Roboter orange. Da sich der Kopf des Roboters nur auf und ab bewegen kann, beinhaltet das Programm keine horizontale Farbverfolgung. Wenn Sie Interesse an diesem Teil haben, können Sie die Motorsteuerung basierend auf dem openCV-Abschnitt hinzufügen, um die Wirkung zu erzielen.
 
 ![webControl](images/webControl.png)
 
-## 6. Q&A
+## 6. Fragen und Antworten
 
-- Where to find the IP address of the Raspberry Pi?
+- Wo finde ich die IP-Adresse des Raspberry Pi?
 
-    > - Before connecting the Raspberry Pi via SSH, you need to know the IP address of the Raspberry Pi. Check the Management interface for your router, or download the app `Network Scanner` -> search for a device named `RASPBERRY` or `Raspberry Pi Foundation` to get the IP address.  
+    > - Bevor Sie den Raspberry Pi per SSH verbinden, müssen Sie die IP-Adresse des Raspberry Pi kennen. Überprüfen Sie die Verwaltungsoberfläche Ihres Routers oder laden Sie die App `Network Scanner` herunter -> suchen Sie nach einem Gerät namens `RASPBERRY` oder `Raspberry Pi Foundation`, um die IP-Adresse zu erhalten.
 
-    > For other methods of obtaining the IP address of Raspberry Pi, refer to the official documentation [IP Address](https://www.raspberrypi.org/documentation/remote-access/ip-address.md) 
+    > Weitere Methoden zum Abrufen der IP-Adresse des Raspberry Pi finden Sie in der offiziellen Dokumentation [IP-Adresse](https://www.raspberrypi.org/documentation/remote-access/ip-address.md)
 
-- Errors occur with `permission denied` prompt when I manually run `server.py` or `webServer.py`.
-
-    > The Raspberry Pi needs the root permission to run the dependent libraries for WS2812 LED lights control.
-    > You need to add `sudo` to the beginning of `server.py` or `webServer.py` to run the program. 
-    > sudo python3 [PATH]/server.py
-    > sudo python3 [PATH]/webServer.py
-
-- I can't create the hotspot for the robot. 
-
-    > You need to use the open source project create_ap to setup the robot's hotspot. Prior to use, disconnect WiFi network but DO NOT turn the WiFi module off, or the create_ap will show an error of hardware being blocked. 
-
-- The servo rotates to an abnormal degree. 
-
-    > Before assembling the rocker arm and servo, you need to make the servo gears rotate to the central position of its rotating range. Then assemble the rocker arm based on the angle instructed in the documentation. There can be a deviation of less than 9° due to the structure of the servo (number of teeth is 20 for the servo gears). For better performance, you may refer to the servo control documentation for initial degree adjustment by code. 
-
-- The servo is shaking. 
-
-    > Probably the servo reducing gear is broken. 
-
-- Raspberry Pi can't boot. 
-
-    > Remove all parts on the driver board. Only connect the board to Raspberry Pi and power supply, reboot. 
-
-- "Remote side unexpectedly closed network connection" shows on a popup window. 
-
-    > There can be error prompts during installation because the Raspberry Pi will auto reboot after the installation, which will disconnect the board. 
-
-- Program crashes after double clicking on client.py or GUI.py.
-
-    > Run the script by `python client.py` or `python GUI.py` in cmd and check the error reports.
-
-- How to initialize the servo's angle?
-
-    > If you've finished software installation on the Raspberry Pi, just boot it up and the servo will be initialized. 
-
-- I can connect to the Raspberry Pi terminal via SSH \ Raspberry Pi failed to connect a WiFi.
-
-    > The power supply methods will not influence control by SSH. Check whether you've created the file `wpa_supplicant.conf` for multiple times. If yes, that's problem causing SSH errors. 
-
-- Can I supply the Robot HAT and Raspberry Pi via USB? 
-
-    > A 2A output is required for a Raspberry Pi 3B, when at least 3A is needed for a Raspberry Pi 4. You can use the USB power for software installation and testing, but it's not suitable for high power module like servo or motor adjustment as it may result in low voltage. It's recommended to use battery for power here.
-
-- After installation, the robot shows no response when booting. 
-
-    > The `server.py` or `webServer.py` may not run due to some reasons. Try to manually run `server.py` or `webServer.py` and check whether there's any error prompt.
-
-- The servo doesn't return to the central position when connected to the driver board. 
-
-    > In general, the Raspberry Pi will auto run `webServer.py` when booting, and `webServer.py` will run and control the servo ports to send a signal of rotating to the central position. When assembling the servo, you can connect it to any servo port anytime. After connecting the servo to the port, the gears will rotate to the central position; assemble the rocker arm to the servo, disconnect the servo from the port, and insert more servos to repeat rocker arm assembly (all servos will be in the central position). 
-
-    > When the servo is powered on, try moving the rocker arm. If it can't be moved, it indicates the program for the servo works; otherwise there's error for the servo program. Run the line `[RobotName]/initPosServos.py` (replace `[RobotName]` with the folder name of your robot's program) to make the servo rotate to the central position.  
-
-    > When booting (it may take 30-50s), it takes a while for the Raspberry Pi to control PCA9685 to set signal of all servo ports for central position rotating. 
-
-- “no cv2" error occurs when I manually run `server.py` or `webServer.py`. 
-
-    > OpenCV is not installed correctly. Type in the command sudo pip3 install opencv-contrib-python in the Raspberry Pi to manually install OpenCV.
+- Fehler treten mit `permissi . auf
