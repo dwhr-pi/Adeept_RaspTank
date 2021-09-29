@@ -1,11 +1,11 @@
-[Robotername]: Adeept_Rasptank
-[RobotURL]:https://github.com/adeept/adeept_rasptank
-[RobotGit]:https://github.com/adeept/adeept_rasptank.git
-[Offizielle Raspberry Pi-Website]:https://www.raspberrypi.org/downloads/
-[Image-Datei für den Raspberry Pi Robot]:https://adeept-my.sharepoint.com/personal/tomsun_adeept_onmicrosoft_com/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Ftomsun%5Fadeept%5Fonmicrosoft%5Fcom%2FDocuments%2FadeeptRaspTank&amp ; originalPath = aHR0cHM6Ly9hZGVlcHQtbXkuc2hhcmVwb2ludC5jb20vOmY6L2cvcGVyc29uYWwvdG9tc3VuX2FkZWVwdF9vbm1pY3Jvc29mdF9jb20vRXZCZmhES1dJVEJLb1ZLejFJTThta01CaWc5SHRiZG9sMXdLQU83WTk5cFJWdz9ydGltZT1rUWxJeE9EMjEwZw
-[Offizielle Website]:https://www.adeept.com/
-[GitHub]:https://github.com/adeept/adeept_rasptank/
-[Dokumentation zur Strukturmontage]:https://www.adeept.com/learn/
+[RobotName]: Adeept_Rasptank
+[RobotURL]: https://github.com/adeept/adeept_rasptank
+[RobotGit]: https://github.com/adeept/adeept_rasptank.git
+[Official Raspberry Pi website]: https://www.raspberrypi.org/downloads/
+[Image file for the Raspberry Pi Robot]: https://adeept-my.sharepoint.com/personal/tomsun_adeept_onmicrosoft_com/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Ftomsun%5Fadeept%5Fonmicrosoft%5Fcom%2FDocuments%2FadeeptRaspTank&amp ; originalPath = aHR0cHM6Ly9hZGVlcHQtbXkuc2hhcmVwb2ludC5jb20vOmY6L2cvcGVyc29uYWwvdG9tc3VuX2FkZWVwdF9vbm1pY3Jvc29mdF9jb20vRXZCZmhES1dJVEJLb1ZLejFJTThta01CaWc5SHRiZG9sMXdLQU83WTk5cFJWdz9ydGltZT1rUWxJeE9EMjEwZw
+[Official website]: https://www.adeept.com/
+[GitHub]: https://github.com/adeept/adeept_rasptank/
+[Documentation for structure assembly]: https://www.adeept.com/learn/
 
 Erste Schritte mit Raspberry Pi Robot und Python
 ----
@@ -226,8 +226,8 @@ Es gibt viele Möglichkeiten, WLAN für Raspberry Pi zu verbinden. In dieser Dok
     ```
     ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
     update_config=1
-    Land=USA
-    Netzwerk={
+    country=USA
+    network={
      ssid="MeinName"
      psk="12345678"
     }

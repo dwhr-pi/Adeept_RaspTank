@@ -226,9 +226,9 @@ There are many ways to connect WiFi for Raspberry Pi. Two methods are provided i
     ```
     ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
     update_config=1
-    Land=USA
-    Netzwerk={
-     ssid="MeinName"
+    country=USA
+    network={
+     ssid="MyName"
      psk="12345678"
     }
     ```
