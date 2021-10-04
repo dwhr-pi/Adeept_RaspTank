@@ -247,7 +247,7 @@ There are many ways to connect WiFi for Raspberry Pi. Two methods are provided i
 
 - Some steps mentioned below are based on the official Raspberry Pi documentation [SSH](https://www.raspberrypi.org/documentation/remote-access/ssh/).  
 
-- For power supply of the Raspberry Pi, refer to the official documentation[Power supply](https://www.raspberrypi.org/documentation/hardware/raspberrypi/power/README.md).
+- For power supply of the Raspberry Pi, refer to the official documentation [Power supply](https://www.raspberrypi.org/documentation/hardware/raspberrypi/power/README.md).
 
 - The Robot HAT board of the Adeept Raspberry Pi Robot can supply power for the Raspberry Pi via GPIO port. However, since it may take a long time to install software on the Raspberry Pi, it's not recommended to supply with the batteries during this process. You may skip the installation of the Robot HAT board or camera during software installation; though you need to make sure the driver board and camera for the Raspberry Pi when it's ready yto run the software installed, or a program error will occur.  
 
@@ -297,7 +297,7 @@ There are many ways to connect WiFi for Raspberry Pi. Two methods are provided i
 - So now you've logged into the Raspberry Pi.   
 
 ### 3.3 Log into Raspberry Pi (Windows)
-- For lower versions of Windows OS, SSH is not built in, and you may log into the Raspberry Pi by referring to the official documentation Raspberry Pi[SSH using Windows](https://www.raspberrypi.org/documentation/remote-access/ssh/windows.md).  
+- For lower versions of Windows OS, SSH is not built in, and you may log into the Raspberry Pi by referring to the official documentation Raspberry Pi [SSH using Windows](https://www.raspberrypi.org/documentation/remote-access/ssh/windows.md).  
 - Before connecting the Raspberry Pi via SSH, you need to know the IP address of the Raspberry Pi. Check the Management interface for your router, or download the app `Network Scanner` -> search for a device named `RASPBERRY` or `Raspberry Pi Foundation` to get the IP address.  
 - For other methods of obtaining the IP address of Raspberry Pi, refer to the official documentation [IP Address](https://www.raspberrypi.org/documentation/remote-access/ip-address.md)  
 - You may need to download the `PuTTY` version for your OS and log into Raspberry Pi with the tool. [Click here to download PuTTY](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html)  
