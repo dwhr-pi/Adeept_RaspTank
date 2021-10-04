@@ -46,9 +46,10 @@ Als Board, das für die Ausbildung in Computerprogrammierung entwickelt wurde, h
 ### 1.2 Über die Dokumentation
 Diese Dokumentation ist eine Softwareinstallations- und Bedienungsanleitung für das Python-Roboterprodukt. Es beschreibt jedes Detail des gesamten Prozesses der Erfüllung des Roboterprojekts von Python und Raspberry Pi von Grund auf sowie einige Vorsichtsmaßnahmen. Ich hoffe, Sie können mit dem Raspberry Pi-Roboter auf Python loslegen und mit dieser Dokumentation weitere Kreationen erstellen.
 
+Je nach den unterschiedlichen Situationen verschiedener Benutzer wird es im Prozess dieses Dokuments einige Änderungen geben. Sie können sich auf den folgenden Prozess beziehen:
+
 ![Meerjungfrau](images/mermaid.png)
 
-e nach den unterschiedlichen Situationen verschiedener Benutzer wird es im Prozess dieses Dokuments einige Änderungen geben. Sie können sich auf den folgenden Prozess beziehen:
 
 ## 2. Wie Sie den Raspberry Pi verwenden
 
