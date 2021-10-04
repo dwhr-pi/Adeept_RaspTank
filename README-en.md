@@ -95,9 +95,9 @@ Since the image file is downloaded with the `Raspberry Pi Imager` in **2.1.1**, 
 
 1. Prepare an SD card (16G or larger) and an SD card reader
 2. Download the `Raspberry Pi Imager` on the official website [Official Raspberry Pi website](https://www.raspberrypi.org/downloads/ )
-    - [Raspberry Pi Imager for Windows](https://downloads.raspberrypi.org/imager/imager.exe "Click here to download Raspberry Pi Imager for Windows)
-    - [Raspberry Pi Imager for macOS](https://downloads.raspberrypi.org/imager/imager.dmg "Click here to download Raspberry Pi Imager for macOS")
-    - [Raspberry Pi Imager for Ubuntu](https://downloads.raspberrypi.org/imager/imager_amd64.deb "Click here to download Raspberry Pi Imager for Ubuntu")
+    - [Raspberry Pi Imager for Windows](https://downloads.raspberrypi.org/imager/imager.exe) "Click here to download Raspberry Pi Imager for Windows."
+    - [Raspberry Pi Imager for macOS](https://downloads.raspberrypi.org/imager/imager.dmg) "Click here to download Raspberry Pi Imager for macOS."
+    - [Raspberry Pi Imager for Ubuntu](https://downloads.raspberrypi.org/imager/imager_amd64.deb) "Click here to download Raspberry Pi Imager for Ubuntu."
 3. Install the `Raspberry Pi Imager`
 4. Download the image file `Raspbian`
     - Torrent file: 
