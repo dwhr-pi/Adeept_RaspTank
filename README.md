@@ -1,10 +1,17 @@
 [RobotName]: Adeept_Rasptank
+
 [RobotURL]: https://github.com/adeept/adeept_rasptank
+
 [RobotGit]: https://github.com/adeept/adeept_rasptank.git
+
 [Official Raspberry Pi website]: https://www.raspberrypi.org/downloads/
+
 [Image file for the Raspberry Pi Robot]: https://adeept-my.sharepoint.com/personal/tomsun_adeept_onmicrosoft_com/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Ftomsun%5Fadeept%5Fonmicrosoft%5Fcom%2FDocuments%2FadeeptRaspTank&amp ; originalPath = aHR0cHM6Ly9hZGVlcHQtbXkuc2hhcmVwb2ludC5jb20vOmY6L2cvcGVyc29uYWwvdG9tc3VuX2FkZWVwdF9vbm1pY3Jvc29mdF9jb20vRXZCZmhES1dJVEJLb1ZLejFJTThta01CaWc5SHRiZG9sMXdLQU83WTk5cFJWdz9ydGltZT1rUWxJeE9EMjEwZw
+
 [Official website]: https://www.adeept.com/
+
 [GitHub]: https://github.com/adeept/adeept_rasptank/
+
 [Documentation for structure assembly]: https://www.adeept.com/learn/
 
 Erste Schritte mit Raspberry Pi Robot und Python
@@ -297,7 +304,7 @@ Es gibt viele Möglichkeiten, WLAN für Raspberry Pi zu verbinden. In dieser Dok
 - Jetzt haben Sie sich also beim Raspberry Pi angemeldet.
 
 ### 3.3 Bei Raspberry Pi anmelden (Windows)
-- Für niedrigere Versionen des Windows-Betriebssystems ist SSH nicht integriert, und Sie können sich beim Raspberry Pi anmelden, indem Sie sich auf die offizielle Dokumentation Raspberry Pi [SSH using Windows] (https://www.raspberrypi.org/documentation/remote-access/ssh/windows.md).
+- Für niedrigere Versionen des Windows-Betriebssystems ist SSH nicht integriert, und Sie können sich beim Raspberry Pi anmelden, indem Sie sich auf die offizielle Dokumentation Raspberry Pi [SSH using Windows](https://www.raspberrypi.org/documentation/remote-access/ssh/windows.md).
 - Bevor Sie den Raspberry Pi per SSH verbinden, müssen Sie die IP-Adresse des Raspberry Pi kennen. Überprüfen Sie die Verwaltungsoberfläche Ihres Routers oder laden Sie die App `Network Scanner` herunter -> suchen Sie nach einem Gerät namens `RASPBERRY` oder `Raspberry Pi Foundation`, um die IP-Adresse zu erhalten.
 - Weitere Methoden zum Abrufen der IP-Adresse des Raspberry Pi finden Sie in der offiziellen Dokumentation [IP-Adresse](https://www.raspberrypi.org/documentation/remote-access/ip-address.md)
 - Möglicherweise müssen Sie die `PuTTY`-Version für Ihr Betriebssystem herunterladen und sich mit dem Tool bei Raspberry Pi anmelden. [Klicken Sie hier, um PuTTY herunterzuladen](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html)
@@ -384,7 +391,7 @@ Es gibt viele Möglichkeiten, WLAN für Raspberry Pi zu verbinden. In dieser Dok
 
 - Wenn das Programm beim Booten des Roboters nicht ausgeführt wird, versuchen Sie, den Raspberry Pi über SSH zu verbinden, führen Sie `webServer.py` manuell mit Code aus und überprüfen Sie die Fehler. Lesen Sie die **Q&A** unten oder senden Sie uns eine E-Mail, um Hilfe zu erhalten (bevor Sie `webServer.py` manuell ausführen, müssen Sie das Programm möglicherweise automatisch im Backend ausführen, um Ressourcen freizugeben.
 
-    > sudo killall python3
+    > sudo killall python3  
     > sudo python3 [RobotName]/server/webServer.py
 
 - Wenn die `webServer.py` erfolgreich automatisch ausgeführt wird, öffnen Sie einen Webbrowser (hier Google Chrome), geben Sie die IP-Adresse des Raspberry Pi ein, mit `:5000` am Ende, und gehen Sie zum nächsten Schritt, Wie nachfolgend dargestellt:
