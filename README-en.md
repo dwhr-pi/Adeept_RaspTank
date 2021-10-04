@@ -62,9 +62,9 @@ According to the different situations of different users, there will be some cha
 
 1. Prepare an SD card (16G or larger) and an SD card reader
 2. Download the `Raspberry Pi Imager` on the official website [Official Raspberry Pi website](https://www.raspberrypi.org/downloads/ )
-    - [Raspberry Pi Imager for Windows](https://downloads.raspberrypi.org/imager/imager.exe "Click here to download Raspberry Pi Imager for Windows)
-    - [Raspberry Pi Imager for macOS](https://downloads.raspberrypi.org/imager/imager.dmg "Click here to download Raspberry Pi Imager for macOS")
-    - [Raspberry Pi Imager for Ubuntu](https://downloads.raspberrypi.org/imager/imager_amd64.deb "Click here to download Raspberry Pi Imager for Ubuntu")
+    - [Raspberry Pi Imager for Windows](https://downloads.raspberrypi.org/imager/imager.exe) "Click here to download Raspberry Pi Imager for Windows."
+    - [Raspberry Pi Imager for macOS](https://downloads.raspberrypi.org/imager/imager.dmg) "Click here to download Raspberry Pi Imager for macOS."
+    - [Raspberry Pi Imager for Ubuntu](https://downloads.raspberrypi.org/imager/imager_amd64.deb) "Click here to download Raspberry Pi Imager for Ubuntu."
 3. Install the `Raspberry Pi Imager`
 4. Write the operating system for Raspberry Pi to the SD card with `Raspberry Pi Imager` `Raspbian Full - A port of Debian with desktop and recommended application`  
 5. Leave the SD card connected after writing is completed, we'll use for configuring SSH and WiFi connection later.
