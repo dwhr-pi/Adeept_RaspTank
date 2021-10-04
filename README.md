@@ -48,7 +48,7 @@ Diese Dokumentation ist eine Softwareinstallations- und Bedienungsanleitung für
 
 ![Meerjungfrau](images/mermaid.png)
 
-
+e nach den unterschiedlichen Situationen verschiedener Benutzer wird es im Prozess dieses Dokuments einige Änderungen geben. Sie können sich auf den folgenden Prozess beziehen:
 
 ## 2. Wie Sie den Raspberry Pi verwenden
 

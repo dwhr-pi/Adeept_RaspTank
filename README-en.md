@@ -47,7 +47,7 @@ This documentation is for software installation and operation guide for the Pyth
 
 ![mermaid](images/mermaid.png)
 
-
+According to the different situations of different users, there will be some changes in the process of this document, you can refer to the following process: 
 
 ## 2. Getting to Use the Raspberry Pi
 
