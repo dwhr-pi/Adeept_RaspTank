@@ -39,8 +39,8 @@ Getting Started with Raspberry Pi Robot and Python
        * [3.5 Install Corresponding Dependent Libraries](#35-install-corresponding-dependent-libraries)
        * [3.6 Run the Raspberry Pi Robot's Program](#36-run-the-raspberry-pi-robots-program)
     * [4. Precautions for Structure Assembly](#4-precautions-for-structure-assembly)
-          * [4.1 Documentation for structure assembly](#41-documentation-for-structure-assembly)
-          * [4.2 Precautions for Structure Assembly](#42-precautions-for-structure-assembly)
+       * [4.1 Documentation for structure assembly](#41-documentation-for-structure-assembly)
+       * [4.2 Precautions for Structure Assembly](#42-precautions-for-structure-assembly)
     * [5. Controlling Robot via WEB App](#5-controlling-robot-via-web-app)
     * [6. Q&amp;A](#6-qa)
 

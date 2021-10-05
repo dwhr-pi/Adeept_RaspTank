@@ -39,8 +39,8 @@ Erste Schritte mit Raspberry Pi Robot und Python
        * [3.5 Entsprechende abhängige Bibliotheken installieren](#35-installieren-entsprechende-abhängige-Bibliotheken)
        * [3.6 Führen Sie das Programm des Raspberry Pi Robots aus](#36-run-the-raspberry-pi-robots-program)
     * [4. Vorsichtsmaßnahmen für die Strukturmontage](#4-Vorsichtsmaßnahmen-für-Strukturmontage)
-          * [4.1 Dokumentation zur Strukturmontage](#41-Dokumentation-für-Strukturmontage)
-          * [4.2 Vorsichtsmaßnahmen für die Strukturmontage](#42-Vorsichtsmaßnahmen-für-Strukturmontage)
+       * [4.1 Dokumentation zur Strukturmontage](#41-Dokumentation-für-Strukturmontage)
+       * [4.2 Vorsichtsmaßnahmen für die Strukturmontage](#42-Vorsichtsmaßnahmen-für-Strukturmontage)
     * [5. Roboter über WEB-App steuern](#5-Roboter-Steuerung-über-Web-App)
     * [6. Fragen und Antworten](#6-qa)
 
